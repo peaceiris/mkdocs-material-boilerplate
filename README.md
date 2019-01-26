@@ -84,6 +84,7 @@ pipenv install -r requirements.txt
 # mkdocs gh-deploy
 ```
 
+- [Demo page on GitHub Pages](https://peaceiris.github.io/mkdocs-material-boilerplate/)
 
 ## Host on Netlify
 
