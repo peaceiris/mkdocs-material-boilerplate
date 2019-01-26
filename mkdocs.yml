@@ -1,0 +1,28 @@
+site_name: 'MkDocs Material Boilerplate'
+repo_name: 'GitHub'
+repo_url: 'https://github.com/peaceiris/mkdocs-material-boilerplate'
+site_description: 'MkDocs Material Boilerplate (Starter Kit) with docker, conda, and pipenv'
+site_author: 'peaceiris'
+copyright: 'peaceiris'
+theme:
+  name: 'material'
+  language: 'en'
+  shortcuts:
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+  palette:
+    primary: 'blue'
+    accent: 'blue'
+markdown_extensions:
+    - admonition
+    - codehilite
+    - footnotes
+    - mdx_math:
+        enable_dollar_delimiter: True
+    - toc:
+        permalink: True
+        separator: "_"
+extra_javascript:
+    - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML
