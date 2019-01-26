@@ -1,4 +1,8 @@
-# MkDocs Material Boilerplate (Starter Kit)
+<h1 align="center">
+<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="Front-End Checklist" width="170">
+<br>
+MkDocs Material Boilerplate (Starter Kit)
+</h1>
 
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/material.png)
 
@@ -15,8 +19,14 @@
   - [Anaconda and Miniconda](#anaconda-and-miniconda)
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
+  - [Via ssh](#via-ssh)
+  - [Via https](#via-https)
+  - [Build with CircleCI](#build-with-circleci)
+- [Host on GitLab Pages](#host-on-gitlab-pages)
 - [Host on Netlify](#host-on-netlify)
+- [Host on AWS Amplify Console](#host-on-aws-amplify-console)
 - [Links](#links)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -71,21 +81,46 @@ pipenv install -r requirements.txt
 
 ## Host on GitHub Pages
 
-- (1) Create a [Personal access token](https://github.com/settings/tokens)
-  - Check only `public_repo`
-- (2) Run the following scripts
-    - Only the first time, enter your `GitHub ID` and `Personal access token`
+- [Demo site on GitHub Pages](https://peaceiris.github.io/mkdocs-material-boilerplate/)
+
+### Via ssh
 
 ```
 ./gh-deploy-docker.sh
 # mkdocs gh-deploy
 ```
 
-- [Demo page on GitHub Pages](https://peaceiris.github.io/mkdocs-material-boilerplate/)
+### Via https
+
+- (1) Create a [Personal access token](https://github.com/settings/tokens)
+  - Check only `public_repo`
+- (2) Run the following scripts
+    - If you clone via `https`, enter your `GitHub ID` and `Personal access token`
+
+```
+./gh-deploy-docker.sh
+# mkdocs gh-deploy
+```
+
+### Build with CircleCI
+
+
+## Host on GitLab Pages
+
+
+
 
 ## Host on Netlify
 
 
+
+## Host on AWS Amplify Console
+
+You can use **Password protection**
+
+- gh-deploy
+- Disable GitHub Pages
+- Deploy `gh-pages` branch on Amplify Console
 
 
 ## Links
@@ -93,9 +128,19 @@ pipenv install -r requirements.txt
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub](https://github.com/mkdocs/mkdocs/)
 
 
-[↑  Back to TOC]
+## License
+
+- [MIT License](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/LICENSE)
+
+---
+
+[The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+
+---
+
+[☝️ Back to TOC]
 
 
 <!-- Internal References -->
-[↑  Back to TOC]: #table-of-contents
+[☝️ Back to TOC]: #table-of-contents
 <!-- External References -->
