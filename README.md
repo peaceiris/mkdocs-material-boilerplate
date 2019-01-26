@@ -12,4 +12,4 @@ docker run --rm -it -p 8000:8000 -v ${PWD}:/docs peaceiris/mkdocs-material
 docker run --rm -v ${PWD}:/docs peaceiris/mkdocs-material build
 ```
 
-Go to [localhost:8000](localhost:8000)
+Go to [localhost:8000](http://localhost:8000)
