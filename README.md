@@ -36,7 +36,15 @@ Go to [localhost:8000](http://localhost:8000)
 
 ## Host on GitHub Pages
 
+- (1) Create a [Personal access token](https://github.com/settings/tokens)
+  - Check only `public_repo`
+- (2) Run the following scripts
+    - Only the first time, enter your `GitHub ID` and `Personal access token`
 
+```
+./gh-deploy-docker.sh
+# mkdocs gh-deploy
+```
 
 
 ## Host on Netlify
