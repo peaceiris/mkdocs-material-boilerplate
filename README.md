@@ -3,6 +3,21 @@
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/material.png)
 
 
+## Table of Contents
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Status badges](#status-badges)
+- [Use public docker image](#use-public-docker-image)
+- [Host on GitHub Pages](#host-on-github-pages)
+- [Host on Netlify](#host-on-netlify)
+- [Links](#links)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+
 ## Status badges
 
 ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
@@ -55,3 +70,11 @@ Go to [localhost:8000](http://localhost:8000)
 ## Links
 
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub](https://github.com/mkdocs/mkdocs/)
+
+
+[↑  Back to TOC]
+
+
+<!-- Internal References -->
+[↑  Back to TOC]: #table-of-contents
+<!-- External References -->
