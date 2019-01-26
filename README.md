@@ -13,6 +13,7 @@
 - [Getting started](#getting-started)
   - [Docker](#docker)
   - [Anaconda and Miniconda](#anaconda-and-miniconda)
+  - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
 - [Host on Netlify](#host-on-netlify)
 - [Links](#links)
@@ -60,6 +61,14 @@ conda env create --file conda.yaml
 conda activate mkdocs
 mkdocs --version
 # OUTPUT: mkdocs, version 1.0.4 from /path/to/mkdocs (Python 3.7)
+```
+
+### pipenv
+
+- [Issue #1](https://github.com/peaceiris/mkdocs-material-boilerplate/issues/1)
+
+```
+pipenv install -r requirements.txt
 ```
 
 
