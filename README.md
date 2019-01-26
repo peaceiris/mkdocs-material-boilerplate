@@ -10,7 +10,9 @@
 
 
 - [Status badges](#status-badges)
-- [Use public docker image](#use-public-docker-image)
+- [Getting started](#getting-started)
+  - [Docker](#docker)
+  - [Anaconda and Miniconda](#anaconda-and-miniconda)
 - [Host on GitHub Pages](#host-on-github-pages)
 - [Host on Netlify](#host-on-netlify)
 - [Links](#links)
@@ -20,6 +22,7 @@
 
 ## Status badges
 
+<!-- https://shields.io/ -->
 ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
 ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
 ![github last commit](https://img.shields.io/github/last-commit/peaceiris/mkdocs-material-boilerplate.svg)
@@ -35,18 +38,29 @@
 <!-- https://microbadger.com/ -->
 
 
-## Use public docker image
+## Getting started
+
+### Docker
 
 - [peaceiris/mkdocs-material - Docker Hub](https://hub.docker.com/r/peaceiris/mkdocs-material)
 
 ```
 # Serve
-docker run --rm -it -p 8000:8000 -v ${PWD}:/docs peaceiris/mkdocs-material
+./serve-docker.sh
 # Build
-docker run --rm -v ${PWD}:/docs peaceiris/mkdocs-material build
+./build-docker.sh
 ```
 
-Go to [localhost:8000](http://localhost:8000)
+Serving on [localhost:8000](http://localhost:8000)
+
+### Anaconda and Miniconda
+
+```
+conda env create --file conda.yaml
+conda activate mkdocs
+mkdocs --version
+# OUTPUT: mkdocs, version 1.0.4 from /path/to/mkdocs (Python 3.7)
+```
 
 
 ## Host on GitHub Pages
