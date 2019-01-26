@@ -1,6 +1,6 @@
 # MkDocs Material Boilerplate (Starter Kit)
 
-![material.png](material.png)
+![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/material.png)
 
 
 ## Use public docker image
