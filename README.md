@@ -3,7 +3,7 @@
 
 ## Use public docker image
 
-- [peaceiris/mkdocs-material - Docker Hub](https://cloud.docker.com/repository/docker/peaceiris/mkdocs-material)
+- [peaceiris/mkdocs-material - Docker Hub](https://hub.docker.com/r/peaceiris/mkdocs-material)
 
 ```
 # Serve
