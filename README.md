@@ -19,9 +19,9 @@ MkDocs Material Boilerplate (Starter Kit)
   - [Anaconda and Miniconda](#anaconda-and-miniconda)
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
-  - [Via ssh](#via-ssh)
-  - [Via https](#via-https)
+  - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
   - [Build with CircleCI](#build-with-circleci)
+  - [Build with GitHub Actions](#build-with-github-actions)
 - [Host on GitLab Pages](#host-on-gitlab-pages)
 - [Host on Netlify](#host-on-netlify)
 - [Host on AWS Amplify Console](#host-on-aws-amplify-console)
@@ -83,26 +83,25 @@ pipenv install -r requirements.txt
 
 - [Demo site on GitHub Pages](https://peaceiris.github.io/mkdocs-material-boilerplate/)
 
-### Via ssh
+### Build with `mkdocs gh-deploy`
+
+via `ssh`
 
 ```
 ./gh-deploy-docker.sh
 # mkdocs gh-deploy
 ```
 
-### Via https
+via `https`
 
 - (1) Create a [Personal access token](https://github.com/settings/tokens)
   - Check only `public_repo`
 - (2) Run the following scripts
     - If you clone via `https`, enter your `GitHub ID` and `Personal access token`
 
-```
-./gh-deploy-docker.sh
-# mkdocs gh-deploy
-```
-
 ### Build with CircleCI
+
+### Build with GitHub Actions
 
 
 ## Host on GitLab Pages
