@@ -1,0 +1,10 @@
+name: mkdocs
+channels:
+  - defaults
+dependencies:
+  - python=3.7
+  - pip:
+    - mkdocs
+    - mkdocs-material
+    - python-markdown-math
+    - prompt-toolkit
