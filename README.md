@@ -1,5 +1,7 @@
 # MkDocs Material Boilerplate (Starter Kit)
 
+![material.png](material.png)
+
 
 ## Use public docker image
 
