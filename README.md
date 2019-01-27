@@ -1,3 +1,7 @@
+<details>
+<summary>UNDER DEVELOPMENT</summary>
+
+
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="Front-End Checklist" width="170">
 <br>
@@ -143,3 +147,6 @@ You can use **Password protection**
 <!-- Internal References -->
 [☝️ Back to TOC]: #table-of-contents
 <!-- External References -->
+
+
+</details>
