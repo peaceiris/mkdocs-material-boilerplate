@@ -126,9 +126,7 @@ via `https`
 
 You can use **Password protection**
 
-- gh-deploy
-- Disable GitHub Pages
-- Deploy `gh-pages` branch on Amplify Console
+Set TTL to `600 sec`
 
 
 ## Links
