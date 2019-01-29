@@ -121,6 +121,8 @@ via `https`
 ## Host on AWS Amplify Console
 
 - [Demo site on Amplify Console](https://master.d1ymzxwumyxuh1.amplifyapp.com/)
+    - ID: `github`
+    - Password: `OhGhiNu5On5Ohzuva6ma`
 
 You can use **Password protection**
 
