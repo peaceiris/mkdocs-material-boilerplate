@@ -1,0 +1,17 @@
+version: 0.1
+frontend:
+  phases:
+    # IMPORTANT - Please verify your build commands
+    preBuild:
+      commands:
+        - pip-3.4 install -r requirements.txt
+    build:
+      commands:
+        - mkdocs build
+  artifacts:
+    # IMPORTANT - Please verify your build output directory
+    baseDirectory: site
+    files:
+      - '**/*'
+  cache:
+    paths: []
