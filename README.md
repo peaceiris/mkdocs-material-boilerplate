@@ -120,6 +120,8 @@ via `https`
 
 ## Host on AWS Amplify Console
 
+- [Demo site on Amplify Console](https://master.d1ymzxwumyxuh1.amplifyapp.com/)
+
 You can use **Password protection**
 
 - gh-deploy
