@@ -115,6 +115,7 @@ via `https`
 
 ## Host on Netlify
 
+- [Demo site on Netlify](https://mkdocs-material.netlify.com/)
 
 
 ## Host on AWS Amplify Console
