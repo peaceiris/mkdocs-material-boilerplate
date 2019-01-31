@@ -127,6 +127,7 @@ via `https`
 ## Host on GitLab Pages
 
 - [peaceiris / mkdocs-material-boilerplate · GitLab]
+- [Demo site on GitLab Pages]
 
 
 ## Host on Netlify
@@ -151,6 +152,7 @@ Set TTL to `600 sec`
 - [peaceiris/mkdocs-material - Docker Hub]
 - [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitHub Pages]
+- [Demo site on GitLab Pages]
 - [Demo site on Netlify]
 - [Demo site on Amplify Console]
 
@@ -172,6 +174,7 @@ Set TTL to `600 sec`
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
 [peaceiris/mkdocs-material-boilerplate - GitLab]: https://gitlab.com/peaceiris/mkdocs-material-boilerplate
 [Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
+[Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
 
