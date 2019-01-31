@@ -54,7 +54,7 @@ MkDocs Material Boilerplate (Starter Kit)
 
 ### Docker
 
-- [peaceiris/mkdocs-material - Docker Hub](https://hub.docker.com/r/peaceiris/mkdocs-material)
+- [peaceiris/mkdocs-material - Docker Hub]
 
 ```
 # Serve
@@ -85,7 +85,7 @@ pipenv install -r requirements.txt
 
 ## Host on GitHub Pages
 
-- [Demo site on GitHub Pages](https://peaceiris.github.io/mkdocs-material-boilerplate/)
+- [Demo site on GitHub Pages]
 
 ### Build with `mkdocs gh-deploy`
 
@@ -110,17 +110,17 @@ via `https`
 
 ## Host on GitLab Pages
 
-
+- [peaceiris / mkdocs-material-boilerplate · GitLab]
 
 
 ## Host on Netlify
 
-- [Demo site on Netlify](https://mkdocs-material.netlify.com/)
+- [Demo site on Netlify]
 
 
 ## Host on AWS Amplify Console
 
-- [Demo site on Amplify Console](https://master.d1ymzxwumyxuh1.amplifyapp.com/)
+- [Demo site on Amplify Console]
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
@@ -131,16 +131,17 @@ Set TTL to `600 sec`
 
 ## Links
 
-- [mkdocs/mkdocs: Project documentation with Markdown - GitHub](https://github.com/mkdocs/mkdocs/)
+- [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
+- [peaceiris/mkdocs-material - Docker Hub]
+- [Demo site on GitHub Pages]
+- [Demo site on Netlify]
+- [Demo site on Amplify Console]
 
 
 ## License
 
 - [MIT License](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/LICENSE)
-
----
-
-[The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
+- [The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 ---
 
@@ -150,6 +151,11 @@ Set TTL to `600 sec`
 <!-- Internal References -->
 [☝️ Back to TOC]: #table-of-contents
 <!-- External References -->
-
+[mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
+[peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
+[peaceiris / mkdocs-material-boilerplate · GitLab]: https://gitlab.com/peaceiris/mkdocs-material-boilerplate
+[Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
+[Demo site on Netlify]: https://mkdocs-material.netlify.com/
+[Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
 
 </details>
