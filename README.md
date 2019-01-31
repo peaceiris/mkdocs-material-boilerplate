@@ -18,8 +18,12 @@ MkDocs Material Boilerplate (Starter Kit)
 
 
 - [Status badges](#status-badges)
-- [Getting started](#getting-started)
+  - [GitHub](#github)
+  - [GitLab](#gitlab)
+  - [Netlify](#netlify)
   - [Docker](#docker)
+- [Getting started](#getting-started)
+  - [Docker](#docker-1)
   - [Anaconda and Miniconda](#anaconda-and-miniconda)
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
@@ -40,11 +44,23 @@ MkDocs Material Boilerplate (Starter Kit)
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
 
+- ![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)
+
+### GitHub
+
 - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
 - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
 - ![github last commit](https://img.shields.io/github/last-commit/peaceiris/mkdocs-material-boilerplate.svg)
-- ![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)
 - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
+
+### GitLab
+
+- ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
+
+### Netlify
+
+### Docker
+
 - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
 - ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
 - [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
