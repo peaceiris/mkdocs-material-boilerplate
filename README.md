@@ -59,6 +59,8 @@ MkDocs Material Boilerplate (Starter Kit)
 
 ### Netlify
 
+- [![Deploy status](https://img.shields.io/badge/dynamic/json.svg?url=https://api.netlify.com/api/v1/sites/mkdocs-material.netlify.com/deploys&label=deploy&query=$[0].state&colorB=brightgreen)](https://app.netlify.com/sites/rbardini/deploys)
+
 ### Docker
 
 - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
