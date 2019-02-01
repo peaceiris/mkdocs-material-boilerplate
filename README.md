@@ -41,6 +41,9 @@ MkDocs Material Boilerplate (Starter Kit)
 
 ## Status badges
 
+<details>
+<summary>Click to expand</summary>
+
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
 
@@ -66,6 +69,8 @@ MkDocs Material Boilerplate (Starter Kit)
 - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
 - ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
 - [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
+
+</details>
 
 
 ## Getting started
