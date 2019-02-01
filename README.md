@@ -134,6 +134,11 @@ via `https`
 
 - [Demo site on Netlify]
 
+| Repo | Button |
+|---|---|
+| Deploy to Netlify from GitHub | [![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate) |
+| Deploy to Netlify from GitLab | [![Deploy to Netlify from GitLab](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://gitlab.com/peaceiris/mkdocs-material-boilerplate) |
+
 
 ## Host on AWS Amplify Console
 
