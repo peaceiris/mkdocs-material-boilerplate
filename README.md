@@ -44,7 +44,6 @@ MkDocs Material Boilerplate (Starter Kit)
 <!-- https://microbadger.com/ -->
 
 - ![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)
-
 - GitHub
     - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
     - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
