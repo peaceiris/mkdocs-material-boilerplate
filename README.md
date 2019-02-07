@@ -55,6 +55,7 @@ MkDocs Material Boilerplate (Starter Kit)
 - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
 - ![github last commit](https://img.shields.io/github/last-commit/peaceiris/mkdocs-material-boilerplate.svg)
 - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
+- [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=peaceiris/mkdocs-material-boilerplate)](https://dependabot.com)
 
 ### GitLab
 
