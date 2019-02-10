@@ -1,0 +1,14 @@
+*.sh
+*.png
+
+# mkdocs
+docs
+site
+
+# setting files
+amplify.yml
+conda.yaml
+mkdocs.yml
+netlify.toml
+runtime.txt
+requirements.txt

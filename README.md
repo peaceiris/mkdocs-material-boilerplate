@@ -37,17 +37,28 @@ MkDocs Material Boilerplate (Starter Kit)
 
 ## Status badges
 
+<details>
+<summary>Click to expand</summary>
+
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
 
-- ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
-- ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
-- ![github last commit](https://img.shields.io/github/last-commit/peaceiris/mkdocs-material-boilerplate.svg)
 - ![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)
-- ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
-- ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
-- ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
-- [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
+- GitHub
+    - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
+    - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
+    - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
+    - [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=peaceiris/mkdocs-material-boilerplate)](https://dependabot.com)
+- GitLab
+    - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
+-  Netlify
+    - [![Deploy status](https://img.shields.io/badge/dynamic/json.svg?url=https://api.netlify.com/api/v1/sites/mkdocs-material.netlify.com/deploys&label=deploy&query=$[0].state&colorB=brightgreen)](https://app.netlify.com/sites/mkdocs-material/deploys)
+- Docker
+    - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
+    - ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
+    - [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
+
+</details>
 
 
 ## Getting started
@@ -111,11 +122,17 @@ via `https`
 ## Host on GitLab Pages
 
 - [peaceiris / mkdocs-material-boilerplate · GitLab]
+- [Demo site on GitLab Pages]
 
 
 ## Host on Netlify
 
 - [Demo site on Netlify]
+
+| Repo | Button |
+|---|---|
+| Deploy to Netlify from GitHub | [![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate) |
+| Deploy to Netlify from GitLab | [![Deploy to Netlify from GitLab](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://gitlab.com/peaceiris/mkdocs-material-boilerplate) |
 
 
 ## Host on AWS Amplify Console
@@ -135,6 +152,7 @@ Set TTL to `600 sec`
 - [peaceiris/mkdocs-material - Docker Hub]
 - [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitHub Pages]
+- [Demo site on GitLab Pages]
 - [Demo site on Netlify]
 - [Demo site on Amplify Console]
 
@@ -156,6 +174,7 @@ Set TTL to `600 sec`
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
 [peaceiris/mkdocs-material-boilerplate - GitLab]: https://gitlab.com/peaceiris/mkdocs-material-boilerplate
 [Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
+[Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
 
