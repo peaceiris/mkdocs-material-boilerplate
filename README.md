@@ -121,7 +121,7 @@ via `https`
 
 ## Host on GitLab Pages
 
-- [peaceiris / mkdocs-material-boilerplate · GitLab]
+- [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitLab Pages]
 
 
