@@ -2,7 +2,7 @@
 <summary>UNDER DEVELOPMENT</summary>
 
 <div align="center">
-<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="mkdocs material Boilerplate (Starter Kit) icon" width="170">
+<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="mkdocs material Boilerplate (Starter Kit) icon" width="170px">
 </div>
 
 <h1 align="center">MkDocs Material Boilerplate (Starter Kit)</h1>
