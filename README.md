@@ -1,12 +1,11 @@
 <details>
 <summary>UNDER DEVELOPMENT</summary>
 
-
-<h1 align="center">
+<div align="center">
 <img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="mkdocs material Boilerplate (Starter Kit) icon" width="170">
-<br>
-MkDocs Material Boilerplate (Starter Kit)
-</h1>
+</div>
+
+<h1 align="center">MkDocs Material Boilerplate (Starter Kit)</h1>
 
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/material.png)
 
