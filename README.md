@@ -87,10 +87,11 @@ mkdocs --version
 
 ### pipenv
 
-- [Issue #1](https://github.com/peaceiris/mkdocs-material-boilerplate/issues/1)
-
 ```
-pipenv install -r requirements.txt
+~/mkdocs $ pipenv sync
+~/mkdocs $ pipenv shell
+~/mkdocs (mkdocs) $ mkdocs --version
+~/mkdocs $ exit
 ```
 
 
