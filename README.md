@@ -1,11 +1,8 @@
-<details>
-<summary>UNDER DEVELOPMENT</summary>
-
+**UNDER DEVELOPMENT**
 
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/graduate-cap.png" alt="Front-End Checklist" width="170">
-<br>
-MkDocs Material Boilerplate (Starter Kit)
+<br>MkDocs Material<br>Boilerplate - Starter Kit
 </h1>
 
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/material.png)
@@ -62,15 +59,22 @@ MkDocs Material Boilerplate (Starter Kit)
 
 ## Getting started
 
+```sh
+git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
+cd mkdocs-material-boilerplate
+```
+
 ### Docker
 
 - [peaceiris/mkdocs-material - Docker Hub]
 
-```
-# Serve
-./serve-docker.sh
-# Build
-./build-docker.sh
+```sh
+docker pull peaceiris/mkdocs-material
+./task.sh -s  # mkdocs serve
+./task.sh -b  # mkdocs build
+./task.sh -d  # mkdocs gh-deploy
+./task.sh -V  # mkdocs --version
+./task.sh -h  # mkdocs --help
 ```
 
 Serving on [localhost:8000](http://localhost:8000)
@@ -94,7 +98,7 @@ pipenv run gh-deploy # mkdocs gh-deploy
 
 via `ssh`
 
-```
+```sh
 ./gh-deploy-docker.sh
 # mkdocs gh-deploy
 ```
@@ -169,5 +173,3 @@ Set TTL to `600 sec`
 [Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
-
-</details>

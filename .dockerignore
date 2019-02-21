@@ -6,6 +6,8 @@ docs
 site
 
 # setting files
+Pipfile
+Pipfile.lock
 amplify.yml
 conda.yaml
 mkdocs.yml
