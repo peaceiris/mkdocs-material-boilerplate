@@ -48,7 +48,7 @@
 - GitLab
     - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
 -  Netlify
-    - [![Deploy status](https://img.shields.io/badge/dynamic/json.svg?url=https://api.netlify.com/api/v1/sites/mkdocs-material.netlify.com/deploys&label=deploy&query=$[0].state&colorB=brightgreen)](https://app.netlify.com/sites/mkdocs-material/deploys)
+    - [![Netlify Status](https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status)](https://app.netlify.com/sites/mkdocs-material/deploys)
 - Docker
     - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
     - ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
@@ -125,10 +125,9 @@ via `https`
 
 - [Demo site on Netlify]
 
-| Repo | Button |
-|---|---|
-| Deploy to Netlify from GitHub | [![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate) |
-| Deploy to Netlify from GitLab | [![Deploy to Netlify from GitLab](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://gitlab.com/peaceiris/mkdocs-material-boilerplate) |
+Create GitHub repository and deploy to Netlify in 1 min.
+
+[![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate)
 
 
 ## Host on AWS Amplify Console
