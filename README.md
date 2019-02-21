@@ -19,7 +19,6 @@
 - [Status badges](#status-badges)
 - [Getting started](#getting-started)
   - [Docker](#docker)
-  - [Anaconda and Miniconda](#anaconda-and-miniconda)
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
@@ -75,22 +74,14 @@
 
 Serving on [localhost:8000](http://localhost:8000)
 
-### Anaconda and Miniconda
-
-```
-conda env create --file conda.yaml
-conda activate mkdocs
-mkdocs --version
-# OUTPUT: mkdocs, version 1.0.4 from /path/to/mkdocs (Python 3.7)
-```
-
 ### pipenv
 
-```
-~/mkdocs $ pipenv sync
-~/mkdocs $ pipenv shell
-~/mkdocs (mkdocs) $ mkdocs --version
-~/mkdocs $ exit
+```sh
+pipenv sync
+pipenv run version   # mkdocs --version
+pipenv run serve     # mkdocs serve
+pipenv run build     # mkdocs build
+pipenv run gh-deploy # mkdocs gh-deploy
 ```
 
 

@@ -1,7 +1,7 @@
 site_name: 'MkDocs Material Boilerplate'
 repo_name: 'GitHub'
 repo_url: 'https://github.com/peaceiris/mkdocs-material-boilerplate'
-site_description: 'MkDocs Material Boilerplate (Starter Kit) with docker, conda, and pipenv'
+site_description: 'MkDocs Material Boilerplate (Starter Kit) with docker and pipenv'
 site_author: 'peaceiris'
 copyright: 'peaceiris'
 theme:

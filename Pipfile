@@ -11,6 +11,16 @@ mkdocs-material = "*"
 python-markdown-math = "*"
 Pygments = "*"
 prompt_toolkit = "*"
+pyyaml = "==4.2b1"
 
 [requires]
 python_version = "3.6"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+version = "mkdocs --version"
+serve = "mkdocs serve"
+build = "mkdocs build"
+gh-deploy = "mkdocs gh-deploy"
