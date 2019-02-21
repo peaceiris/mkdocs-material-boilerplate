@@ -76,15 +76,6 @@ MkDocs Material Boilerplate (Starter Kit)
 
 Serving on [localhost:8000](http://localhost:8000)
 
-### Anaconda and Miniconda
-
-```
-conda env create --file conda.yaml
-conda activate mkdocs
-mkdocs --version
-# OUTPUT: mkdocs, version 1.0.4 from /path/to/mkdocs (Python 3.7)
-```
-
 ### pipenv
 
 ```sh
