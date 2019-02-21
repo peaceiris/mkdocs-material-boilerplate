@@ -21,6 +21,7 @@ allow_prereleases = true
 
 [scripts]
 version = "mkdocs --version"
+help = "mkdocs --help"
 serve = "mkdocs serve"
 build = "mkdocs build"
 gh-deploy = "mkdocs gh-deploy"
