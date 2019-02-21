@@ -87,11 +87,12 @@ mkdocs --version
 
 ### pipenv
 
-```
-~/mkdocs $ pipenv sync
-~/mkdocs $ pipenv shell
-~/mkdocs (mkdocs) $ mkdocs --version
-~/mkdocs $ exit
+```sh
+pipenv sync
+pipenv run version   # mkdocs --version
+pipenv run serve     # mkdocs serve
+pipenv run build     # mkdocs build
+pipenv run gh-deploy # mkdocs gh-deploy
 ```
 
 
