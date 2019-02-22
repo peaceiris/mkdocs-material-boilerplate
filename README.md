@@ -117,7 +117,7 @@ via `https`
 
 ## Host on GitLab Pages
 
-- [peaceiris / mkdocs-material-boilerplate · GitLab]
+- [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitLab Pages]
 
 
@@ -157,13 +157,13 @@ Set TTL to `600 sec`
 - [MIT License](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/LICENSE)
 - [The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
----
 
-[☝️ Back to TOC]
+<div align="right">
+<a href="#table-of-contents">Back to TOC ☝️</a>
+</div>
 
 
 <!-- Internal References -->
-[☝️ Back to TOC]: #table-of-contents
 <!-- External References -->
 [mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
