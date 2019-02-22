@@ -121,9 +121,14 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ### Build with CircleCI
 
+- Environment Variables
+    - `USER_NAME`
+    - `USER_EMAIL`
+    - `GITHUB_TOKEN`
+
 ### Build with GitHub Actions
 
-TBW
+TBW.
 
 
 ## Host on GitLab Pages
