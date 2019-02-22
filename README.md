@@ -44,7 +44,6 @@
     - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
     - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
     - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
-    - [![Dependabot Status](https://api.dependabot.com/badges/status?host=github&repo=peaceiris/mkdocs-material-boilerplate)](https://dependabot.com)
 - GitLab
     - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
 -  Netlify
