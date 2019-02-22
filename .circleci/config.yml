@@ -56,7 +56,7 @@ jobs:
       # https://nose.readthedocs.io
       - deploy:
           name: "Deploy docs"
-          command:
+          command: |
             git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
             git clone --branch=gh-pages --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git site
             git config user.name "$USER_NAME"
