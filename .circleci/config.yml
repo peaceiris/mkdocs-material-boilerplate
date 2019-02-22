@@ -11,7 +11,7 @@ workflows:
       - build:
           filters:
             branches:
-              only: master
+              only: circleci
 
 jobs:
   build:
@@ -60,22 +60,12 @@ jobs:
             git config --global user.name "$USER_NAME"
             git config --global user.email "$USER_EMAIL"
 
-      - add_ssh_keys:
-          fingerprints:
-            - "$FINGER_PRINT"
-
       - deploy:
-          name: "Build docs"
+          name: "Deploy docs"
           command: |
-            git clone --branch=master --depth=1 $CIRCLE_REPOSITORY_URL deploy && cd deploy
+            git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
             . venv/bin/activate
             mkdocs gh-deploy
-            # git clone --branch=gh-pages --depth=1 $CIRCLE_REPOSITORY_URL site
-            # mkdocs build
-            # cd site
-            # git add --all
-            # git commit -m "Deploy $CIRCLE_BUILD_NUM $CIRCLE_SHA1 from CircleCI with mkdocs [skip ci]"
-            # git push origin gh-pages
 
       - store_artifacts:
           path: test-reports
