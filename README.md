@@ -34,7 +34,7 @@
 ## Status badges
 
 <details>
-<summary>👉 Click to expand</summary>
+<summary>Click to expand 👈</summary>
 
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
@@ -80,13 +80,13 @@ Serving on [localhost:8000](http://localhost:8000)
 
 ### pipenv
 
-```sh
+```
 pipenv sync
-pipenv run version   # mkdocs --version
-pipenv run help      # mkdocs --help
-pipenv run serve     # mkdocs serve
-pipenv run build     # mkdocs build
-pipenv run gh-deploy # mkdocs gh-deploy
+pipenv run version    # mkdocs --version
+pipenv run help       # mkdocs --help
+pipenv run serve      # mkdocs serve
+pipenv run build      # mkdocs build
+pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
 
@@ -98,9 +98,16 @@ pipenv run gh-deploy # mkdocs gh-deploy
 
 via `ssh`
 
-```sh
-./gh-deploy-docker.sh
-# mkdocs gh-deploy
+Deploy with `docker`.
+
+```
+./task.sh -d  # mkdocs gh-deploy
+```
+
+Deploy with `pipenv`.
+
+```
+pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
 via `https`
