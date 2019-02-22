@@ -62,8 +62,11 @@ jobs:
 
       - deploy:
           name: "Deploy docs"
-          command: |
-            git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
+          environment:
+            REPO_URL: https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git
+          command:
+            git clone --branch=master --depth=1 $REPO_URL deploy && cd deploy
+            git remote add origin $REPO_URL
             git fetch origin
             git branch gh-pages origin/gh-pages
             . ../venv/bin/activate
