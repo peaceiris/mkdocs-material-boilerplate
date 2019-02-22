@@ -83,6 +83,7 @@ Serving on [localhost:8000](http://localhost:8000)
 ```sh
 pipenv sync
 pipenv run version   # mkdocs --version
+pipenv run help      # mkdocs --help
 pipenv run serve     # mkdocs serve
 pipenv run build     # mkdocs build
 pipenv run gh-deploy # mkdocs gh-deploy
