@@ -1,14 +1,19 @@
-*.sh
-*.png
+task.sh
+images
 
 # mkdocs
+mkdocs.yml
 docs
 site
 
-# setting files
+# pipenv
+Pipfile
+Pipfile.lock
+
+# amplify console
 amplify.yml
-conda.yaml
-mkdocs.yml
+requirements.txt
+
+# netlify
 netlify.toml
 runtime.txt
-requirements.txt
