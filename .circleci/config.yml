@@ -11,7 +11,9 @@ workflows:
       - build:
           filters:
             branches:
-              only: master
+              only:
+                - master
+                - gh-pages
 
 jobs:
   build:
