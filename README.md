@@ -67,6 +67,9 @@ cd mkdocs-material-boilerplate
 
 - [peaceiris/mkdocs-material - Docker Hub]
 
+<!-- https://dockeri.co/ -->
+[![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)](https://hub.docker.com/r/peaceiris/mkdocs-material)
+
 ```sh
 docker pull peaceiris/mkdocs-material
 ./task.sh -s  # mkdocs serve
