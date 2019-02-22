@@ -3,9 +3,8 @@ FROM squidfunk/mkdocs-material
 MAINTAINER peaceiris
 
 # Install requirements
-RUN pip install --upgrade pip && pip install \
+RUN pip install --upgrade pip \
     python-markdown-math \
-    pygments \
     prompt-toolkit
 
 # Expose MkDocs development server port

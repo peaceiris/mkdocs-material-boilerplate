@@ -29,7 +29,7 @@ case "$1" in
         docker run --rm -it -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" build
         ;;
     "deploy" | "--deploy" | "-d")
-        docker run --rm -it -v "${PWD}:${DOCS_DIR}" -v "${HOME}/.ssh:/root/.ssh" "${DOCKER_IMAGE}" gh-deploy
+        docker run --rm -it -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" gh-deploy
         ;;
     "version" | "-V" | "--version")
         docker run --rm -it "${DOCKER_IMAGE}" --version

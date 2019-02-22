@@ -20,6 +20,8 @@
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
+    - [Deploy with `docker`](#deploy-with-docker)
+    - [Deploy with `pipenv`](#deploy-with-pipenv)
   - [Build with CircleCI](#build-with-circleci)
   - [Build with GitHub Actions](#build-with-github-actions)
 - [Host on GitLab Pages](#host-on-gitlab-pages)
@@ -34,7 +36,7 @@
 ## Status badges
 
 <details>
-<summary>👉 Click to expand</summary>
+<summary>Click to expand 👈</summary>
 
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
@@ -67,6 +69,9 @@ cd mkdocs-material-boilerplate
 
 - [peaceiris/mkdocs-material - Docker Hub]
 
+<!-- https://dockeri.co/ -->
+[![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)](https://hub.docker.com/r/peaceiris/mkdocs-material)
+
 ```sh
 docker pull peaceiris/mkdocs-material
 ./task.sh -s  # mkdocs serve
@@ -80,13 +85,13 @@ Serving on [localhost:8000](http://localhost:8000)
 
 ### pipenv
 
-```sh
+```
 pipenv sync
-pipenv run version   # mkdocs --version
-pipenv run help      # mkdocs --help
-pipenv run serve     # mkdocs serve
-pipenv run build     # mkdocs build
-pipenv run gh-deploy # mkdocs gh-deploy
+pipenv run version    # mkdocs --version
+pipenv run help       # mkdocs --help
+pipenv run serve      # mkdocs serve
+pipenv run build      # mkdocs build
+pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
 
@@ -96,23 +101,28 @@ pipenv run gh-deploy # mkdocs gh-deploy
 
 ### Build with `mkdocs gh-deploy`
 
-via `ssh`
+#### Deploy with `docker`
 
-```sh
-./gh-deploy-docker.sh
-# mkdocs gh-deploy
+1. Create a [Personal access token](https://github.com/settings/tokens). (Check only `repo`)
+1. Run the following scripts.
+
+```
+./task.sh -d  # mkdocs gh-deploy
+# Enter github username
+# Enter the Personal access token
 ```
 
-via `https`
+#### Deploy with `pipenv`
 
-- (1) Create a [Personal access token](https://github.com/settings/tokens)
-  - Check only `public_repo`
-- (2) Run the following scripts
-    - If you clone via `https`, enter your `GitHub ID` and `Personal access token`
+```
+pipenv run gh-deploy  # mkdocs gh-deploy
+```
 
 ### Build with CircleCI
 
 ### Build with GitHub Actions
+
+TBW
 
 
 ## Host on GitLab Pages
@@ -136,9 +146,7 @@ Create GitHub repository and deploy to Netlify in 1 min.
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
-You can use **Password protection**
-
-Set TTL to `600 sec`
+You can use **Password protection**. Set TTL to `600` sec.
 
 
 ## Links
