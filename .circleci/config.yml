@@ -54,15 +54,11 @@ jobs:
       # other common Python testing frameworks include pytest and nose
       # https://pytest.org
       # https://nose.readthedocs.io
-      - run:
-          name: "Configure git"
-          command: |
-            git config --global user.name "$USER_NAME"
-            git config --global user.email "$USER_EMAIL"
-
       - deploy:
           name: "Deploy docs"
           command:
+            git config --global user.name "$USER_NAME"
+            git config --global user.email "$USER_EMAIL"
             git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
             git clone --branch=gh-pages --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git site
             . ../venv/bin/activate
@@ -71,7 +67,3 @@ jobs:
             git add --all
             git commit -m "Deploy $CIRCLE_BUILD_NUM from CircleCI [ci skip]" || true
             git push origin gh-pages
-
-      - store_artifacts:
-          path: test-reports
-          destination: test-reports
