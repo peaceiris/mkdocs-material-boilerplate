@@ -64,11 +64,13 @@ jobs:
           name: "Deploy docs"
           command:
             git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
-            git remote add origin https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git
-            git fetch origin
-            git branch gh-pages origin/gh-pages
+            git clone --branch=gh-pages --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git site
             . ../venv/bin/activate
-            mkdocs gh-deploy
+            mkdocs build
+            cd site
+            git add --all
+            git commit -m "Deploy $CIRCLE_BUILD_NUM from CircleCI [ci skip]" || true
+            git push origin gh-pages
 
       - store_artifacts:
           path: test-reports
