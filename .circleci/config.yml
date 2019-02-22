@@ -13,7 +13,6 @@ workflows:
             branches:
               only:
                 - master
-                - gh-pages
 
 jobs:
   build:

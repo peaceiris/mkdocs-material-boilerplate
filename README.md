@@ -104,7 +104,7 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 #### Deploy with `docker`
 
-1. Create a [Personal access token](https://github.com/settings/tokens). (Check only `repo`)
+1. Create a [Personal access token]. (Check only `repo`)
 2. Run the following scripts.
 
 ```
@@ -121,11 +121,12 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ### Build with CircleCI
 
-Set these Environment Variables.
-
-- `USER_NAME`
-- `USER_EMAIL`
-- `GITHUB_TOKEN`
+- Set these **Environment Variables**.
+    - `USER_NAME`: GitHub ID
+    - `USER_EMAIL`: Email
+    - `GITHUB_TOKEN`: [Personal access token]
+- **Advanced Settings**
+    - Only build pull requests: `On`
 
 ### Build with GitHub Actions
 
@@ -187,3 +188,4 @@ You can use **Password protection**. Set TTL to `600` sec.
 [Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
+[Personal access token]: https://github.com/settings/tokens
