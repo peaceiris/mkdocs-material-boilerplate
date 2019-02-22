@@ -34,7 +34,7 @@
 ## Status badges
 
 <details>
-<summary>Click to expand</summary>
+<summary>👉 Click to expand</summary>
 
 <!-- https://shields.io/ -->
 <!-- https://microbadger.com/ -->
