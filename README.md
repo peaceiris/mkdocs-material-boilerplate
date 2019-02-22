@@ -46,6 +46,7 @@
     - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
     - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
     - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
+    - [![CircleCI status badge](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master)
 - GitLab
     - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
 -  Netlify
@@ -104,7 +105,7 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 #### Deploy with `docker`
 
 1. Create a [Personal access token](https://github.com/settings/tokens). (Check only `repo`)
-1. Run the following scripts.
+2. Run the following scripts.
 
 ```
 ./task.sh -d  # mkdocs gh-deploy
@@ -120,9 +121,15 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ### Build with CircleCI
 
+Set these Environment Variables.
+
+- `USER_NAME`
+- `USER_EMAIL`
+- `GITHUB_TOKEN`
+
 ### Build with GitHub Actions
 
-TBW
+TBW.
 
 
 ## Host on GitLab Pages
