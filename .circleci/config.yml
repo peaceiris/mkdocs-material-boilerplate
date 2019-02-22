@@ -64,6 +64,8 @@ jobs:
           name: "Deploy docs"
           command: |
             git clone --branch=master --depth=1 https://$USER_NAME:$GITHUB_TOKEN@github.com/$USER_NAME/$CIRCLE_PROJECT_REPONAME.git deploy && cd deploy
+            git fetch origin
+            git branch gh-pages origin/gh-pages
             . ../venv/bin/activate
             mkdocs gh-deploy
 
