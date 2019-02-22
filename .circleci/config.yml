@@ -62,6 +62,7 @@ jobs:
             git config user.name "$USER_NAME"
             git config user.email "$USER_EMAIL"
             . ../venv/bin/activate
+            git fetch
             mkdocs gh-deploy -m "Deploy $CIRCLE_BUILD_NUM from CircleCI [ci skip]"
             # cd site
             # git config --global user.name "$USER_NAME"
