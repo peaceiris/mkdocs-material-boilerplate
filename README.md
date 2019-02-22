@@ -20,6 +20,8 @@
   - [pipenv](#pipenv)
 - [Host on GitHub Pages](#host-on-github-pages)
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
+    - [Deploy with `docker`](#deploy-with-docker)
+    - [Deploy with `pipenv`](#deploy-with-pipenv)
   - [Build with CircleCI](#build-with-circleci)
   - [Build with GitHub Actions](#build-with-github-actions)
 - [Host on GitLab Pages](#host-on-gitlab-pages)
@@ -99,30 +101,28 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ### Build with `mkdocs gh-deploy`
 
-via `ssh`
+#### Deploy with `docker`
 
-Deploy with `docker`.
+1. Create a [Personal access token](https://github.com/settings/tokens). (Check only `repo`)
+1. Run the following scripts.
 
 ```
 ./task.sh -d  # mkdocs gh-deploy
+# Enter github username
+# Enter the Personal access token
 ```
 
-Deploy with `pipenv`.
+#### Deploy with `pipenv`
 
 ```
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
-via `https`
-
-- (1) Create a [Personal access token](https://github.com/settings/tokens)
-  - Check only `public_repo`
-- (2) Run the following scripts
-    - If you clone via `https`, enter your `GitHub ID` and `Personal access token`
-
 ### Build with CircleCI
 
 ### Build with GitHub Actions
+
+TBW
 
 
 ## Host on GitLab Pages
@@ -146,9 +146,7 @@ Create GitHub repository and deploy to Netlify in 1 min.
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
-You can use **Password protection**
-
-Set TTL to `600 sec`
+You can use **Password protection**. Set TTL to `600` sec.
 
 
 ## Links
