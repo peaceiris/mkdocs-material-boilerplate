@@ -27,6 +27,7 @@
 - [Host on AWS Amplify Console](#host-on-aws-amplify-console)
 - [Links](#links)
 - [License](#license)
+- [Support Author](#support-author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -171,6 +172,10 @@ You can use **Password protection**. Set TTL to `600` sec.
 - [MIT License](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/LICENSE)
 - [The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
+
+## Support Author
+
+- [Amazon wish list](http://amzn.asia/ilWK0Yj)
 
 <div align="right">
 <a href="#table-of-contents">Back to TOC ☝️</a>
