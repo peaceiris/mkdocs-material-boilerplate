@@ -20,7 +20,7 @@
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
     - [Deploy with `docker`](#deploy-with-docker)
     - [Deploy with `pipenv`](#deploy-with-pipenv)
-  - [Build with CircleCI](#build-with-circleci)
+  - [Build and deploy with CircleCI](#build-and-deploy-with-circleci)
   - [Build with GitHub Actions](#build-with-github-actions)
 - [Host on GitLab Pages](#host-on-gitlab-pages)
 - [Host on Netlify](#host-on-netlify)
@@ -97,7 +97,7 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ## Host on GitHub Pages
 
-- [Demo site on GitHub Pages]
+- [Demo site on GitHub Pages] (build & deploy with CircleCI)
 
 ### Build with `mkdocs gh-deploy`
 
@@ -118,7 +118,7 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
-### Build with CircleCI
+### Build and deploy with CircleCI
 
 - Set these **Environment Variables**.
     - `USER_NAME`: GitHub ID
@@ -135,12 +135,12 @@ TBW.
 ## Host on GitLab Pages
 
 - [peaceiris/mkdocs-material-boilerplate - GitLab]
-- [Demo site on GitLab Pages]
+- [Demo site on GitLab Pages] (build & deploy with GitLab CI/CD)
 
 
 ## Host on Netlify
 
-- [Demo site on Netlify]
+- [Demo site on Netlify] (build & deploy with Netlify)
 
 Create GitHub repository and deploy to Netlify in 1 min.
 
@@ -149,7 +149,7 @@ Create GitHub repository and deploy to Netlify in 1 min.
 
 ## Host on AWS Amplify Console
 
-- [Demo site on Amplify Console]
+- [Demo site on Amplify Console] (build & deploy with Amplify Console)
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
