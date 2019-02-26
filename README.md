@@ -20,13 +20,14 @@
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
     - [Deploy with `docker`](#deploy-with-docker)
     - [Deploy with `pipenv`](#deploy-with-pipenv)
-  - [Build with CircleCI](#build-with-circleci)
+  - [Build and deploy with CircleCI](#build-and-deploy-with-circleci)
   - [Build with GitHub Actions](#build-with-github-actions)
 - [Host on GitLab Pages](#host-on-gitlab-pages)
 - [Host on Netlify](#host-on-netlify)
 - [Host on AWS Amplify Console](#host-on-aws-amplify-console)
 - [Links](#links)
 - [License](#license)
+- [Support Author](#support-author)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -44,6 +45,7 @@
     - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
     - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
     - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
+    - [![CircleCI status badge](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master)
 - GitLab
     - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
 -  Netlify
@@ -95,14 +97,14 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 
 ## Host on GitHub Pages
 
-- [Demo site on GitHub Pages]
+- [Demo site on GitHub Pages] (build & deploy with CircleCI)
 
 ### Build with `mkdocs gh-deploy`
 
 #### Deploy with `docker`
 
-1. Create a [Personal access token](https://github.com/settings/tokens). (Check only `repo`)
-1. Run the following scripts.
+1. Create a [Personal access token]. (Check only `repo`)
+2. Run the following scripts.
 
 ```
 ./task.sh -d  # mkdocs gh-deploy
@@ -116,22 +118,29 @@ pipenv run gh-deploy  # mkdocs gh-deploy
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
-### Build with CircleCI
+### Build and deploy with CircleCI
+
+- Set these **Environment Variables**.
+    - `USER_NAME`: GitHub ID
+    - `USER_EMAIL`: Email
+    - `GITHUB_TOKEN`: [Personal access token]
+- **Advanced Settings**
+    - Only build pull requests: `On`
 
 ### Build with GitHub Actions
 
-TBW
+TBW.
 
 
 ## Host on GitLab Pages
 
 - [peaceiris/mkdocs-material-boilerplate - GitLab]
-- [Demo site on GitLab Pages]
+- [Demo site on GitLab Pages] (build & deploy with GitLab CI/CD)
 
 
 ## Host on Netlify
 
-- [Demo site on Netlify]
+- [Demo site on Netlify] (build & deploy with Netlify)
 
 Create GitHub repository and deploy to Netlify in 1 min.
 
@@ -140,7 +149,7 @@ Create GitHub repository and deploy to Netlify in 1 min.
 
 ## Host on AWS Amplify Console
 
-- [Demo site on Amplify Console]
+- [Demo site on Amplify Console] (build & deploy with Amplify Console)
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
@@ -164,6 +173,10 @@ You can use **Password protection**. Set TTL to `600` sec.
 - [The graduate cap icon](https://www.flaticon.com/free-icon/graduate-cap_62627) made by [Freepik](https://www.freepik.com/) from [www.flaticon.com](https://www.flaticon.com/) is licensed by [CC 3.0 BY](http://creativecommons.org/licenses/by/3.0/)
 
 
+## Support Author
+
+- [Amazon wish list](http://amzn.asia/ilWK0Yj)
+
 <div align="right">
 <a href="#table-of-contents">Back to TOC ☝️</a>
 </div>
@@ -178,3 +191,4 @@ You can use **Password protection**. Set TTL to `600` sec.
 [Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
+[Personal access token]: https://github.com/settings/tokens
