@@ -108,6 +108,7 @@ You can use **Password protection**. Set TTL to `600` sec.
 ## Links
 
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
+- [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
 - [peaceiris/mkdocs-material - Docker Hub]
 - [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitHub Pages]
@@ -131,6 +132,7 @@ You can use **Password protection**. Set TTL to `600` sec.
 <!-- Internal References -->
 <!-- External References -->
 [mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
+[squidfunk/mkdocs-material: A Material Design theme for MkDocs]: https://github.com/squidfunk/mkdocs-material
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
 [peaceiris/mkdocs-material-boilerplate - GitLab]: https://gitlab.com/peaceiris/mkdocs-material-boilerplate
 [Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
