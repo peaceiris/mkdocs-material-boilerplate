@@ -16,6 +16,7 @@
 - [Getting started](#getting-started)
   - [Docker](#docker)
   - [pipenv](#pipenv)
+  - [pip (conda)](#pip-conda)
 - [Host on GitHub Pages](#host-on-github-pages)
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
     - [Deploy with `docker`](#deploy-with-docker)
@@ -93,6 +94,13 @@ pipenv run serve      # mkdocs serve
 pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
+
+### pip (conda)
+
+```
+pip install -r requirements.txt
+```
+
 
 
 ## Host on GitHub Pages

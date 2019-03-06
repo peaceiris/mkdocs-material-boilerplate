@@ -43,6 +43,13 @@ pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
+### pip (conda)
+
+```
+pip install -r requirements.txt
+```
+
+
 
 ## Host on GitHub Pages
 
