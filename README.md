@@ -132,8 +132,6 @@ pipenv run gh-deploy  # mkdocs gh-deploy
     - `USER_NAME`: GitHub ID
     - `USER_EMAIL`: Email
     - `GITHUB_TOKEN`: [Personal access token]
-- **Advanced Settings**
-    - Only build pull requests: `On`
 
 ### Build with GitHub Actions
 
