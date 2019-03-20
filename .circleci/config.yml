@@ -66,5 +66,5 @@ jobs:
             git config user.name "$USER_NAME"
             git config user.email "$USER_EMAIL"
             git add --all
-            git commit -m "Deploy $CIRCLE_BUILD_NUM from CircleCI"
+            git commit -m "Deploy $CIRCLE_BUILD_NUM from CircleCI [skip ci]"
             git push origin gh-pages
