@@ -14,7 +14,6 @@ Pipfile.lock
 
 # amplify console
 amplify.yml
-requirements.txt
 
 # netlify
 netlify.toml
