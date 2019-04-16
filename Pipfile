@@ -6,12 +6,13 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-mkdocs = "*"
-mkdocs-material = "*"
-python-markdown-math = "*"
-Pygments = "*"
-prompt_toolkit = "*"
-pyyaml = "==4.2b1"
+mkdocs = "==1.0.4"
+mkdocs-material = "==4.1.2"
+python-markdown-math = "==0.6"
+Pygments = "==2.3.1"
+prompt_toolkit = "==2.0.9"
+pyyaml = "==5.1"
+Jinja2 = "==2.10.1"
 
 [requires]
 python_version = "3.6"

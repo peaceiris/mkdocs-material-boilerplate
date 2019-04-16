@@ -1,3 +1,17 @@
+[![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/LICENSE)
+[![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/releases/latest)
+[![GitHub release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/releases)
+
+[![CircleCI status badge](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master)
+[![GitLab pipeline status](https://gitlab.com/peaceiris/mkdocs-material-boilerplate/badges/master/pipeline.svg)](https://gitlab.com/peaceiris/mkdocs-material-boilerplate)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status)](https://app.netlify.com/sites/mkdocs-material/deploys)
+[![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
+
+<!-- https://shields.io/ -->
+<!-- https://microbadger.com/ -->
+
+
+
 <h1 align="center">
 <img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/images/graduate-cap.png" alt="Front-End Checklist" width="170">
 <br>MkDocs Material<br>Boilerplate - Starter Kit
@@ -6,13 +20,13 @@
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/images/material.png)
 
 
+
 ## Table of Contents
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 
 
-- [Status badges](#status-badges)
 - [Getting started](#getting-started)
   - [Docker](#docker)
   - [pipenv](#pipenv)
@@ -32,31 +46,6 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
-
-## Status badges
-
-<details>
-<summary>Click to expand 👈</summary>
-
-<!-- https://shields.io/ -->
-<!-- https://microbadger.com/ -->
-
-- ![license](https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg)
-- GitHub
-    - ![release](https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg)
-    - ![github release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)
-    - ![GitHub All Releases](https://img.shields.io/github/downloads/peaceiris/mkdocs-material-boilerplate/total.svg)
-    - [![CircleCI status badge](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master)
-- GitLab
-    - ![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/peaceiris/mkdocs-material-boilerplate.svg?style=flat)
--  Netlify
-    - [![Netlify Status](https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status)](https://app.netlify.com/sites/mkdocs-material/deploys)
-- Docker
-    - ![docker pulls](https://img.shields.io/docker/pulls/peaceiris/mkdocs-material.svg)
-    - ![docker stars](https://img.shields.io/docker/stars/peaceiris/mkdocs-material.svg)
-    - [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
-
-</details>
 
 
 ## Getting started

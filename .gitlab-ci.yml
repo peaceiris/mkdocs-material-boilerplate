@@ -1,12 +1,7 @@
-image: python:3.7-alpine3.7
+image: python:3.6-alpine
 
 before_script:
-  - pip install --upgrade pip && pip install \
-    mkdocs \
-    mkdocs-material \
-    python-markdown-math \
-    pygments \
-    prompt-toolkit
+  - pip install --upgrade pip && pip install -r requirements.txt
 
 pages:
   script:

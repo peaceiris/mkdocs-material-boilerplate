@@ -1,2 +1,5 @@
 # mkdocs documentation
 /site
+
+# python
+.venv

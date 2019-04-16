@@ -1,11 +1,11 @@
-FROM squidfunk/mkdocs-material
+FROM python:3.6-alpine
 
-MAINTAINER peaceiris
+LABEL maintainer="peaceiris"
 
 # Install requirements
-RUN pip install --upgrade pip \
-    python-markdown-math \
-    prompt-toolkit
+ADD ./requirements.txt /root
+WORKDIR /root
+RUN pip install --upgrade pip && pip install -r requirements.txt
 
 # Expose MkDocs development server port
 EXPOSE 8000

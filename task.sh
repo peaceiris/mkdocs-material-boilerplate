@@ -4,7 +4,7 @@
 set -e -o pipefail # -x: is for debugging
 
 DOCKER_IMAGE="peaceiris/mkdocs-material"
-DOCS_DIR="/docs"
+DOCS_DIR="/root"
 
 function help() {
     cat << EOS
