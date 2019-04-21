@@ -60,6 +60,7 @@ cd mkdocs-material-boilerplate
 ```sh
 pipenv sync
 pipenv shell
+
 # invoke
 inv --list  # show task list
 inv build   # mkdocs build
