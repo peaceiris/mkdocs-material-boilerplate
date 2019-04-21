@@ -28,9 +28,9 @@
 
 
 - [Getting started](#getting-started)
-  - [Docker](#docker)
   - [pipenv](#pipenv)
-  - [pip (conda)](#pip-conda)
+  - [Docker](#docker)
+  - [pip (Anaconda, Miniconda)](#pip-anaconda-miniconda)
 - [Host on GitHub Pages](#host-on-github-pages)
   - [Build with `mkdocs gh-deploy`](#build-with-mkdocs-gh-deploy)
     - [Deploy with `docker`](#deploy-with-docker)
@@ -55,27 +55,9 @@ git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
 cd mkdocs-material-boilerplate
 ```
 
-### Docker
-
-- [peaceiris/mkdocs-material - Docker Hub]
-
-<!-- https://dockeri.co/ -->
-[![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)](https://hub.docker.com/r/peaceiris/mkdocs-material)
-
-```sh
-docker pull peaceiris/mkdocs-material
-./task.sh -s  # mkdocs serve
-./task.sh -b  # mkdocs build
-./task.sh -d  # mkdocs gh-deploy
-./task.sh -V  # mkdocs --version
-./task.sh -h  # mkdocs --help
-```
-
-Serving on [localhost:8000](http://localhost:8000)
-
 ### pipenv
 
-```
+```sh
 pipenv sync
 pipenv run version    # mkdocs --version
 pipenv run help       # mkdocs --help
@@ -84,7 +66,26 @@ pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
-### pip (conda)
+### Docker
+
+```sh
+docker pull peaceiris/mkdocs-material
+
+./task.sh -s  # mkdocs serve
+./task.sh -b  # mkdocs build
+./task.sh -d  # mkdocs gh-deploy
+./task.sh -V  # mkdocs --version
+./task.sh -h  # mkdocs --help
+
+docker build -t peaceiris/mkdocs-material .
+```
+
+Serving on [localhost:8000](http://localhost:8000)
+
+<!-- https://dockeri.co/ -->
+[![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)][peaceiris/mkdocs-material - Docker Hub]
+
+### pip (Anaconda, Miniconda)
 
 ```
 pip install -r requirements.txt
