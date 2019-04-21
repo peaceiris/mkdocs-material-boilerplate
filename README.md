@@ -59,6 +59,18 @@ cd mkdocs-material-boilerplate
 
 ```sh
 pipenv sync
+pipenv shell
+# invoke
+inv --list  # show task list
+inv build   # mkdocs build
+inv deploy  # mkdocs gh-deploy
+inv serve   # mkdocs serve && open browser
+
+inv serve --help # show task help
+```
+
+```sh
+# pipenv run
 pipenv run version    # mkdocs --version
 pipenv run help       # mkdocs --help
 pipenv run serve      # mkdocs serve
@@ -66,10 +78,12 @@ pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
+Serving on [localhost:8000](http://localhost:8000)
+
 ### Docker
 
 ```sh
-docker pull peaceiris/mkdocs-material
+./task.sh -p  # docker pull peaceiris/mkdocs-material
 
 ./task.sh -s  # mkdocs serve
 ./task.sh -b  # mkdocs build
@@ -79,8 +93,6 @@ docker pull peaceiris/mkdocs-material
 
 docker build -t peaceiris/mkdocs-material .
 ```
-
-Serving on [localhost:8000](http://localhost:8000)
 
 <!-- https://dockeri.co/ -->
 [![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)][peaceiris/mkdocs-material - Docker Hub]
