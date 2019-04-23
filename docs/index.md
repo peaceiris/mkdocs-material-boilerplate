@@ -20,39 +20,6 @@
 
 
 
-## Getting started
-
-```sh
-git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
-cd mkdocs-material-boilerplate
-```
-
-### pipenv
-
-```sh
-pipenv sync
-pipenv shell
-
-# invoke
-inv --list  # show task list
-inv build   # mkdocs build
-inv deploy  # mkdocs gh-deploy
-inv serve   # mkdocs serve && open browser
-
-inv serve --help # show task help
-```
-
-```sh
-# pipenv run
-pipenv run version    # mkdocs --version
-pipenv run help       # mkdocs --help
-pipenv run serve      # mkdocs serve
-pipenv run build      # mkdocs build
-pipenv run gh-deploy  # mkdocs gh-deploy
-```
-
-Serving on [localhost:8000](http://localhost:8000)
-
 ### Docker
 
 ```sh
