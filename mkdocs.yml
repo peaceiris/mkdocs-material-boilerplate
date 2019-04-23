@@ -63,6 +63,7 @@ nav:
   - Home: index.md
   - Material for MkDocs: material-for-mkdocs.md
   - Getting started:
+    - Download boilerplate: getting-started/download-boilerplate.md
     - pipenv: getting-started/pipenv.md
     - Docker: getting-started/docker.md
     - pip: getting-started/pip.md
