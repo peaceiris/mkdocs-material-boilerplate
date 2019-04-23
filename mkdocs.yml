@@ -61,7 +61,19 @@ extra:
 # Page tree
 nav:
   - Home: index.md
-  - MathJax: mathjax.md
-  - CircleCI: circleci.md
-  - Code Hilite: code-hilite.md
-  - Footnote: footnote.md
+  - Material for MkDocs: material-for-mkdocs.md
+  - Getting started:
+    - pipenv: getting-started/pipenv.md
+    - Docker: getting-started/docker.md
+    - pip: getting-started/pip.md
+  - Hosting and Deployment:
+    - Combinations: hosting-and-deployment/combinations.md
+    - Netlify: hosting-and-deployment/netlify.md
+    - GitHub Pages: hosting-and-deployment/github-pages.md
+    - GitLab Pages: hosting-and-deployment/gitlab-pages.md
+    - AWS Amplify Console: hosting-and-deployment/aws-amplify-console.md
+  - Extensions:
+    - MathJax: extensions/mathjax.md
+    - Code Hilite: extensions/code-hilite.md
+    - Footnote: extensions/footnote.md
+  - License: license.md
