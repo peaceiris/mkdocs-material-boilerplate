@@ -142,7 +142,7 @@ TBW.
 
 ## Host on GitLab Pages
 
-- See [.gitlab-ci.yml](./.gitlab-ci.yml)
+- See [.gitlab-ci.yml](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/.gitlab-ci.yml)
 
 ## Host on Netlify
 
