@@ -47,7 +47,8 @@ markdown_extensions:
 # Customization
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
-
+extra_css:
+  - 'assets/css/custom.css'
 extra:
   manifest: 'manifest.json'
   search:
@@ -60,21 +61,21 @@ extra:
 
 # Page tree
 nav:
-  - Home: index.md
-  - Material for MkDocs: material-for-mkdocs.md
-  - Getting started:
-    - Download boilerplate: getting-started/download-boilerplate.md
-    - pipenv: getting-started/pipenv.md
-    - Docker: getting-started/docker.md
-    - pip: getting-started/pip.md
-  - Hosting and Deployment:
-    - Combinations: hosting-and-deployment/combinations.md
-    - Netlify: hosting-and-deployment/netlify.md
-    - GitHub Pages: hosting-and-deployment/github-pages.md
-    - GitLab Pages: hosting-and-deployment/gitlab-pages.md
-    - AWS Amplify Console: hosting-and-deployment/aws-amplify-console.md
-  - Extensions:
-    - MathJax: extensions/mathjax.md
-    - Code Hilite: extensions/code-hilite.md
-    - Footnote: extensions/footnote.md
-  - License: license.md
+  - 'Home': 'index.md'
+  - 'Material for MkDocs': 'material-for-mkdocs.md'
+  - 'Getting started':
+    - 'Download boilerplate': 'getting-started/download-boilerplate.md'
+    - 'pipenv': 'getting-started/pipenv.md'
+    - 'Docker': 'getting-started/docker.md'
+    - 'pip': 'getting-started/pip.md'
+  - 'Hosting and Deployment':
+    - 'Combinations': 'hosting-and-deployment/combinations.md'
+    - 'Netlify': 'hosting-and-deployment/netlify.md'
+    - 'GitHub Pages': 'hosting-and-deployment/github-pages.md'
+    - 'GitLab Pages': 'hosting-and-deployment/gitlab-pages.md'
+    - 'AWS Amplify Console': 'hosting-and-deployment/aws-amplify-console.md'
+  - 'Extensions':
+    - 'MathJax': 'extensions/mathjax.md'
+    - 'Code Hilite': 'extensions/code-hilite.md'
+    - 'Footnote': 'extensions/footnote.md'
+  - 'License': 'license.md'
