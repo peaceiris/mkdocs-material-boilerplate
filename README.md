@@ -3,7 +3,6 @@
 [![GitHub release date](https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg)](https://github.com/peaceiris/mkdocs-material-boilerplate/releases)
 
 [![CircleCI status badge](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master.svg?style=svg)](https://circleci.com/gh/peaceiris/mkdocs-material-boilerplate/tree/master)
-[![GitLab pipeline status](https://gitlab.com/peaceiris/mkdocs-material-boilerplate/badges/master/pipeline.svg)](https://gitlab.com/peaceiris/mkdocs-material-boilerplate)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status)](https://app.netlify.com/sites/mkdocs-material/deploys)
 [![docker image size](https://images.microbadger.com/badges/image/peaceiris/mkdocs-material.svg)](https://microbadger.com/images/peaceiris/mkdocs-material "Get your own image badge on microbadger.com")
 
@@ -59,6 +58,19 @@ cd mkdocs-material-boilerplate
 
 ```sh
 pipenv sync
+pipenv shell
+
+# invoke
+inv --list  # show task list
+inv build   # mkdocs build
+inv deploy  # mkdocs gh-deploy
+inv serve   # mkdocs serve && open browser
+
+inv serve --help # show task help
+```
+
+```sh
+# pipenv run
 pipenv run version    # mkdocs --version
 pipenv run help       # mkdocs --help
 pipenv run serve      # mkdocs serve
@@ -66,10 +78,12 @@ pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
 ```
 
+Serving on [localhost:8000](http://localhost:8000)
+
 ### Docker
 
 ```sh
-docker pull peaceiris/mkdocs-material
+./task.sh -p  # docker pull peaceiris/mkdocs-material
 
 ./task.sh -s  # mkdocs serve
 ./task.sh -b  # mkdocs build
@@ -79,8 +93,6 @@ docker pull peaceiris/mkdocs-material
 
 docker build -t peaceiris/mkdocs-material .
 ```
-
-Serving on [localhost:8000](http://localhost:8000)
 
 <!-- https://dockeri.co/ -->
 [![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)][peaceiris/mkdocs-material - Docker Hub]
@@ -130,9 +142,7 @@ TBW.
 
 ## Host on GitLab Pages
 
-- [peaceiris/mkdocs-material-boilerplate - GitLab]
-- [Demo site on GitLab Pages] (build & deploy with GitLab CI/CD)
-
+- See [.gitlab-ci.yml](./.gitlab-ci.yml)
 
 ## Host on Netlify
 
@@ -157,9 +167,7 @@ You can use **Password protection**. Set TTL to `600` sec.
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
 - [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
 - [peaceiris/mkdocs-material - Docker Hub]
-- [peaceiris/mkdocs-material-boilerplate - GitLab]
 - [Demo site on GitHub Pages]
-- [Demo site on GitLab Pages]
 - [Demo site on Netlify]
 - [Demo site on Amplify Console]
 
@@ -184,9 +192,7 @@ You can use **Password protection**. Set TTL to `600` sec.
 [mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
 [squidfunk/mkdocs-material: A Material Design theme for MkDocs]: https://github.com/squidfunk/mkdocs-material
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
-[peaceiris/mkdocs-material-boilerplate - GitLab]: https://gitlab.com/peaceiris/mkdocs-material-boilerplate
 [Demo site on GitHub Pages]: https://peaceiris.github.io/mkdocs-material-boilerplate/
-[Demo site on GitLab Pages]: https://peaceiris.gitlab.io/mkdocs-material-boilerplate/
 [Demo site on Netlify]: https://mkdocs-material.netlify.com/
 [Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
 [Personal access token]: https://github.com/settings/tokens
