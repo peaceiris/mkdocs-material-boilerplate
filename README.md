@@ -12,7 +12,7 @@
 
 
 <h1 align="center">
-<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs/images/graduate-cap.png" alt="Front-End Checklist" width="170">
+<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs/images/graduate-cap.png" alt="MkDocs icon" width="170">
 <br>MkDocs Material<br>Boilerplate - Starter Kit
 </h1>
 
