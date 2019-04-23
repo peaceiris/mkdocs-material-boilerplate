@@ -4,6 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+invoke = "*"
 
 [packages]
 mkdocs = "==1.0.4"
@@ -23,6 +24,6 @@ allow_prereleases = true
 [scripts]
 version = "mkdocs --version"
 help = "mkdocs --help"
-serve = "mkdocs serve"
-build = "mkdocs build"
-gh-deploy = "mkdocs gh-deploy"
+serve = "inv serve"
+build = "inv build"
+gh-deploy = "inv deploy"

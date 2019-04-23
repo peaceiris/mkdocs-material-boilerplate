@@ -14,6 +14,7 @@ Usage: ./task.sh [OPTION]
     deploy,  -d, --deploy    mkdocs gh-deploy
     version, -V, -version    mkdocs --version
     help,    -h, --help      mkdocs --help
+    pull,    -p, --pull      docker pull
 EOS
 }
 
@@ -36,6 +37,9 @@ case "$1" in
         ;;
     "help" | "--help" | "-h")
         docker run --rm -it "${DOCKER_IMAGE}" --help
+        ;;
+    "pull" | "--pull" | "-p")
+        docker pull "${DOCKER_IMAGE}"
         ;;
     *)
         help
