@@ -1,7 +1,7 @@
 from invoke import task
-import webbrowser
-import urllib.request
-import concurrent.futures
+from time import sleep
+import urllib.request, webbrowser, os
+import concurrent.futures as confu
 
 
 def open_browser(addr):
@@ -10,6 +10,7 @@ def open_browser(addr):
     """
     url = "http://" + addr
     while True:
+        sleep(0.1)
         try:
             with urllib.request.urlopen(url) as res:
                 if res:
@@ -28,9 +29,9 @@ def serve(c, addr="localhost:8000"):
     """
     Serve site and open browser
     """
-    executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
-    executor.submit(open_browser, addr)
-    executor.submit(c.run(f"mkdocs serve --dev-addr={addr}"))
+    with confu.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
+        executor.submit(open_browser, addr)
+        c.run(f"mkdocs serve --dev-addr={addr}")
 
 
 @task
