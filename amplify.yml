@@ -4,7 +4,9 @@ frontend:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - pip-3.4 install -r requirements.txt
+        - yum -y install python36 python36-devel python36-pip
+        - python3.6 -m pip install --upgrade pip
+        - python3.6 -m pip install -r requirements.txt
     build:
       commands:
         - mkdocs build
