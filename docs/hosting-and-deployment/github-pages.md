@@ -4,7 +4,7 @@
 
 
 
-## Build with GitHub Actions
+## Build and deploy with GitHub Actions
 
 ```
 .github
@@ -14,11 +14,23 @@
     └── entrypoint.sh
 ```
 
-When you push `.github` to GitHub, GitHub Actions automatically enables.
+### (1) Create `gh-pages` branch
+
+```sh
+remote_branch="gh-pages"
+git checkout --orphan "${remote_branch}"
+git reset --hard
+git commit --allow-empty -m "Initializing gh-pages branch"
+git push origin "${remote_branch}"
+```
+
+### (2) Create release
+
+When new release is published, GitHub Actions runs.
 
 
 
-## Build with `mkdocs gh-deploy`
+## Build and deploy with `mkdocs gh-deploy`
 
 ### Use `pipenv`
 
