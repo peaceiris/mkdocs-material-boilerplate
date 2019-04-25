@@ -3,14 +3,15 @@
 # Fail on unset variables and command errors
 set -ex -o pipefail # -x: is for debugging
 
-mkdir /root/.ssh
-ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
-echo "${ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
-chmod 400 /root/.ssh/id_rsa
+# mkdir /root/.ssh
+# ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
+# echo "${ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
+# chmod 400 /root/.ssh/id_rsa
 
 mkdocs build
 
-remote_repo="git@github.com:${GITHUB_REPOSITORY}.git"
+remote_repo="https://${GITHUB_TOKEN}@github.com/${TARGET_REPO}.git"
+# remote_repo="git@github.com:${GITHUB_REPOSITORY}.git"
 remote_branch="gh-pages"
 
 cd site

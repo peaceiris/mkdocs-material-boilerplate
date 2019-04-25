@@ -5,7 +5,7 @@ workflow "Main workflow" {
 
 action "master" {
   uses = "actions/bin/filter@master"
-  args = "branch master"
+  args = "branch action-test"
 }
 
 action "Build and deploy" {
