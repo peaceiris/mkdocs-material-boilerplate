@@ -24,9 +24,9 @@
     └── entrypoint.sh
 ```
 
-### (3) Push commit
+### (3) Update releases
 
-When you push commits, GitHub Actions runs.
+Triggered when a release is `published`, `unpublished`, `created`, `edited`, `deleted`, or `prereleased`.
 
 
 

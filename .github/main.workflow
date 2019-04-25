@@ -1,5 +1,5 @@
 workflow "Main workflow" {
-  on = "push"
+  on = "release"
   resolves = ["Build and deploy with MkDocs"]
 }
 
