@@ -1,6 +1,6 @@
-# Material for MkDocs build and deploy to GitHub Pages
+# GitHub Actions to build with Material for MkDocs and deploy to GitHub Pages
 
-Build documentation with Material for MkDocs and push to GitHub Pages.
+Build documentation with Material for MkDocs and push to GitHub Pages with GitHub Actions.
 
 ![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs/images/material.png)
 
