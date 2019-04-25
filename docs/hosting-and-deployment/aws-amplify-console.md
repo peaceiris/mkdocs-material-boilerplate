@@ -4,7 +4,7 @@
     - ID: `github`
     - Password: `OhGhiNu5On5Ohzuva6ma`
 
-You can use **Password protection**. Set TTL to `600` sec.
+You can use **Password protection**.
 
 
 

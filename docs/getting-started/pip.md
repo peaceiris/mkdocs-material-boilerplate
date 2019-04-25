@@ -3,3 +3,5 @@
 ```sh
 pip install -r requirements.txt
 ```
+
+`inv` command is also available.

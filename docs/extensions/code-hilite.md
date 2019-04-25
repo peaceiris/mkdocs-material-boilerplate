@@ -5,7 +5,7 @@
 
 
 
-## Configure
+## Configure `mkdocs.yml`
 
 ```
 markdown_extensions:
