@@ -6,6 +6,6 @@ workflow "Main workflow" {
 action "Build and deploy with MkDocs" {
   uses = "./.github/mkdocs/"
   secrets = [
-    "GITHUB_ACTIONS_DEPLOY_KEY"
+    "ACTIONS_DEPLOY_KEY"
   ]
 }

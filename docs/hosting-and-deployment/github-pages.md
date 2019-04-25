@@ -24,7 +24,7 @@ git push origin "${remote_branch}"
 2. Go to "Settings > Deploy Keys" of repository.
 3. Add your public key within "Allow write access" option.
 4. Go to "Settings > Secrets" of repository.
-5. Add your private deploy key as `GITHUB_ACTIONS_DEPLOY_KEY`
+5. Add your private deploy key as `ACTIONS_DEPLOY_KEY`
 
 ### (3) Push `.github`
 

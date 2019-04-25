@@ -5,7 +5,7 @@ set -ex -o pipefail # -x: is for debugging
 
 mkdir /root/.ssh
 ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
-echo "${GITHUB_ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
+echo "${ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
 chmod 400 /root/.ssh/id_rsa
 
 mkdocs build
