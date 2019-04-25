@@ -8,16 +8,16 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 
 remote_branch="gh-pages"
 
-rm -rf site
-git worktree prune
-rm -rf .git/worktrees/site/
-
 git worktree add -B "${remote_branch}" site "origin/${remote_branch}"
+cd site
+git pull origin "${remote_branch}"
+cd ..
 
 mkdocs build
 
 cd site
-git add .
+git add --all
 timestamp=$(date -u)
 git commit -m "Automated deployment to GitHub Pages on ${timestamp}"
 git push origin "${remote_branch}"
+cd ..
