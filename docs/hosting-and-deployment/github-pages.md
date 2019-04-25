@@ -6,14 +6,6 @@
 
 ## Build and deploy with GitHub Actions
 
-```
-.github
-├── main.workflow
-└── mkdocs
-    ├── Dockerfile
-    └── entrypoint.sh
-```
-
 ### (1) Create `gh-pages` branch
 
 ```sh
@@ -24,9 +16,27 @@ git commit --allow-empty -m "Initializing gh-pages branch"
 git push origin "${remote_branch}"
 ```
 
-### (2) Create release
+### (2) Create Deploy Key
 
-When new release is published, GitHub Actions runs.
+1. Generate deploy key `ssh-keygen -t rsa -f mkdocs -q -N ""`
+2. Go to "Settings > Deploy Keys" of repository.
+3. Add your public key within "Allow write access" option.
+4. Go to "Settings > Secrets" of repository.
+5. Add your private deploy key as `GITHUB_ACTIONS_DEPLOY_KEY`
+
+### (3) Push `.github`
+
+```
+.github
+├── main.workflow
+└── mkdocs
+    ├── Dockerfile
+    └── entrypoint.sh
+```
+
+### (4) Push commit
+
+When you push commits to master branch, GitHub Actions runs.
 
 
 
