@@ -1,4 +1,4 @@
-workflow "Main workflow" {
+workflow "MkDocs workflow" {
   on = "push"
   resolves = ["Build and deploy"]
 }
@@ -12,6 +12,6 @@ action "Build and deploy" {
   needs = "master"
   uses = "./.github/mkdocs/"
   secrets = [
-    "ACTIONS_DEPLOY_KEY"
+    "GITHUB_TOKEN"
   ]
 }
