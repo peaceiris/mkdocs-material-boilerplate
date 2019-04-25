@@ -8,17 +8,7 @@
 
 cf. [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages)
 
-### (1) Create `gh-pages` branch
-
-```sh
-remote_branch="gh-pages"
-git checkout --orphan "${remote_branch}"
-git reset --hard
-git commit --allow-empty -m "Initializing gh-pages branch"
-git push origin "${remote_branch}"
-```
-
-### (2) Create Deploy Key
+### (1) Add deploy Key
 
 1. Generate deploy key `ssh-keygen -t rsa -f mkdocs -q -N ""`
 2. Go to "Settings > Deploy Keys" of repository.
@@ -26,7 +16,7 @@ git push origin "${remote_branch}"
 4. Go to "Settings > Secrets" of repository.
 5. Add your private deploy key as `ACTIONS_DEPLOY_KEY`
 
-### (3) Push `.github`
+### (2) Push `.github`
 
 ```
 .github
@@ -36,9 +26,9 @@ git push origin "${remote_branch}"
     └── entrypoint.sh
 ```
 
-### (4) Push commit
+### (3) Push commit
 
-When you push commits to master branch, GitHub Actions runs.
+When you push commits, GitHub Actions runs.
 
 
 
