@@ -1,5 +1,7 @@
 # Start with Docker
 
+- [peaceiris/mkdocs-material - Docker Hub]
+
 <!-- https://dockeri.co/ -->
 [![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)][peaceiris/mkdocs-material - Docker Hub]
 
@@ -17,7 +19,7 @@ docker build -t peaceiris/mkdocs-material .
 
 Serving on [localhost:8000](http://localhost:8000)
 
-See definition [task.sh]
+Task are defined by [task.sh]
 
 
 

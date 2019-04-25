@@ -6,8 +6,6 @@
 
 ## Build and deploy with GitHub Actions
 
-cf. [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages)
-
 ### (1) Add deploy Key
 
 1. Generate deploy key `ssh-keygen -t rsa -f mkdocs -q -N ""`
@@ -34,7 +32,7 @@ When you push commits, GitHub Actions runs.
 
 ## Build and deploy with `mkdocs gh-deploy`
 
-### Use `pipenv`
+### pipenv
 
 ```
 pipenv run gh-deploy
@@ -48,7 +46,7 @@ pipenv shell
 inv deploy
 ```
 
-### Use `docker`
+### Docker
 
 1. Create a [Personal access token]. (Check only `repo`)
 2. Run the following scripts.

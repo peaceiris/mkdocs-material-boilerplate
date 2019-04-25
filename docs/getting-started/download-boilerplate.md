@@ -19,4 +19,4 @@ unzip master.zip
 cd mkdocs-material-boilerplate-master
 ```
 
-[Click me to download zip](https://github.com/peaceiris/mkdocs-material-boilerplate/archive/master.zip)
+👉 [Click me to download zip](https://github.com/peaceiris/mkdocs-material-boilerplate/archive/master.zip)

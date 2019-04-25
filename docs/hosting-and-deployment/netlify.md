@@ -2,7 +2,7 @@
 
 - [Demo site on Netlify] (build & deploy with Netlify)
 
-Create GitHub repository and deploy to Netlify in 1 min.
+Create GitHub repository and deploy to Netlify with the following button in 1 min.
 
 [![Deploy to Netlify from GitHub](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate)
 
