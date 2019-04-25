@@ -9,10 +9,11 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 remote_branch="gh-pages"
 
 git checkout "${remote_branch}" || \
-    git checkout --orphan "${remote_branch}" && \
-    git reset --hard && \
-    git commit --allow-empty -m "Initializing gh-pages branch" && \
-    git push origin "${remote_branch}"
+    git checkout -b "${remote_branch}" "origin/${remote_branch}" || \
+        git checkout --orphan "${remote_branch}" && \
+        git reset --hard && \
+        git commit --allow-empty -m "Initializing gh-pages branch" && \
+        git push origin "${remote_branch}"
 git checkout master
 
 rm -rf site
