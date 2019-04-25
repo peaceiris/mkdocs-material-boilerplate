@@ -28,7 +28,7 @@ cf. [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/khanhicetea
 
 ### (3) Push commit
 
-When you push commits to master branch, GitHub Actions runs.
+When you push commits, GitHub Actions runs.
 
 
 
