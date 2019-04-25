@@ -1,4 +1,4 @@
-# Build with Material for MkDocs and deploy to GitHub Pages
+# GitHub Actions for MkDocs and GitHub Pages
 
 Build markdown documentation with [Material for MkDocs] and push to GitHub Pages with GitHub Actions.
 
