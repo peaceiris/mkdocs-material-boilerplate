@@ -5,13 +5,13 @@ workflow "MkDocs workflow" {
 
 action "master" {
   uses = "actions/bin/filter@master"
-  args = "branch action-test"
+  args = "branch master"
 }
 
 action "Build and deploy" {
   needs = "master"
   uses = "./.github/mkdocs/"
   secrets = [
-    "GITHUB_TOKEN"
+    "ACTIONS_DEPLOY_KEY"
   ]
 }
