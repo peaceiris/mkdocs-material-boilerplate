@@ -6,6 +6,8 @@
 
 ## Build and deploy with GitHub Actions
 
+cf. [khanhicetea/gh-actions-hugo-deploy-gh-pages](https://github.com/khanhicetea/gh-actions-hugo-deploy-gh-pages)
+
 ### (1) Create `gh-pages` branch
 
 ```sh
