@@ -9,7 +9,6 @@ git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
 remote_branch="gh-pages"
 
 rm -rf site
-mkdir site
 git worktree prune
 rm -rf .git/worktrees/site/
 
