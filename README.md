@@ -44,9 +44,11 @@ inv serve
 
 - [mkdocs/mkdocs: Project documentation with Markdown - GitHub]
 - [squidfunk/mkdocs-material: A Material Design theme for MkDocs]
+- [peaceiris/actions-mkdocs-gh-pages: GitHub Actions for MkDocs and GitHub Pages]
 
 [mkdocs/mkdocs: Project documentation with Markdown - GitHub]: https://github.com/mkdocs/mkdocs/
 [squidfunk/mkdocs-material: A Material Design theme for MkDocs]: https://github.com/squidfunk/mkdocs-material
+[peaceiris/actions-mkdocs-gh-pages: GitHub Actions for MkDocs and GitHub Pages]: https://github.com/peaceiris/actions-mkdocs-gh-pages
 
 
 

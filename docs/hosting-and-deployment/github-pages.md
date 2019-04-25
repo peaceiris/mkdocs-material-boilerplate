@@ -6,27 +6,7 @@
 
 ## Build and deploy with GitHub Actions
 
-### (1) Add deploy Key
-
-1. Generate deploy key `ssh-keygen -t rsa -f mkdocs -q -N ""`
-2. Go to "Settings > Deploy Keys" of repository.
-3. Add your public key within "Allow write access" option.
-4. Go to "Settings > Secrets" of repository.
-5. Add your private deploy key as `ACTIONS_DEPLOY_KEY`
-
-### (2) Push `.github`
-
-```
-.github
-├── main.workflow
-└── mkdocs
-    ├── Dockerfile
-    └── entrypoint.sh
-```
-
-### (3) Update releases
-
-When you push to master branch, GitHub Actions runs.
+- [GitHub Actions for MkDocs and GitHub Pages - Build markdown documentation with Material for MkDocs and push to GitHub Pages with GitHub Actions](https://github.com/peaceiris/actions-mkdocs-gh-pages)
 
 
 
