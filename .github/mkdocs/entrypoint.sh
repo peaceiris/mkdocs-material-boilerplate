@@ -21,5 +21,5 @@ git remote add origin "${remote_repo}"
 git checkout "${remote_branch}" || git checkout --orphan "${remote_branch}"
 git add --all
 timestamp=$(date -u)
-git commit -m "Automated deployment to GitHub Pages on ${timestamp} ${GITHUB_SHA} ${GITHUB_REF}"
+git commit -m "Automated deployment: ${timestamp} ${GITHUB_SHA} ${GITHUB_REF}"
 git push origin "${remote_branch}" --force
