@@ -4,29 +4,40 @@
 
 ## GitHub Pages and GitHub
 
-- `gh-deploy`
-- CircleCI
-- GitHub Actions
+- Host source code on GitHub.
+- Deploy and deploy with:
+    - `mkdocs gh-deploy`
+    - CircleCI
+    - GitHub Actions
 
 
 
 ## GitLab Pages and GitLab
 
-- GitLab CI
+- Host source code on GitLab.
+- Build and deploy with GitLab CI/CD.
 
 
 
 ## Netlify
 
+Host source code on:
+
 - GitHub
 - GitLab
 - BitBucket
+
+Build and deploy with Netlify.
 
 
 
 ## AWS Amplify Console
 
+Host source code on:
+
 - GitHub
 - GitLab
 - BitBucket
 - AWS CodeCommit
+
+Build and deploy with AWS Amplify Console.
