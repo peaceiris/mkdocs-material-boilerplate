@@ -6,7 +6,7 @@
 
 ## Build and deploy with GitHub Actions
 
-- [GitHub Actions for MkDocs and GitHub Pages - Build markdown documentation with Material for MkDocs and push to GitHub Pages with GitHub Actions](https://github.com/peaceiris/actions-mkdocs-gh-pages)
+- [GitHub Actions for MkDocs and GitHub Pages - Build markdown documentation with Material for MkDocs and deploy to GitHub Pages with automatically.](https://github.com/peaceiris/actions-mkdocs-gh-pages)
 
 
 
