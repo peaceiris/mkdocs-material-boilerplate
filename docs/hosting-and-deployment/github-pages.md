@@ -1,12 +1,40 @@
 # Host on GitHub Pages
 
-- [Demo site on GitHub Pages] (build & deploy with CircleCI)
+- [Demo site on GitHub Pages] (build & deploy with GitHub Actions)
+
+
+
+## Build with GitHub Actions
+
+```
+.github
+├── main.workflow
+└── mkdocs
+    ├── Dockerfile
+    └── entrypoint.sh
+```
+
+When you push `.github` to GitHub, GitHub Actions automatically enables.
 
 
 
 ## Build with `mkdocs gh-deploy`
 
-### Deploy with `docker`
+### Use `pipenv`
+
+```
+pipenv run gh-deploy
+
+# OR
+pipenv shell
+mkdocs gh-deploy
+
+# OR
+pipenv shell
+inv deploy
+```
+
+### Use `docker`
 
 1. Create a [Personal access token]. (Check only `repo`)
 2. Run the following scripts.
@@ -17,12 +45,6 @@
 # Enter the Personal access token
 ```
 
-### Deploy with `pipenv`
-
-```
-pipenv run gh-deploy  # mkdocs gh-deploy
-```
-
 
 
 ## Build and deploy with CircleCI
@@ -31,12 +53,6 @@ pipenv run gh-deploy  # mkdocs gh-deploy
     - `USER_NAME`: GitHub ID
     - `USER_EMAIL`: Email
     - `GITHUB_TOKEN`: [Personal access token]
-
-
-
-## Build with GitHub Actions
-
-TBW.
 
 
 
