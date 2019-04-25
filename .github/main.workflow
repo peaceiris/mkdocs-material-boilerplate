@@ -1,9 +1,15 @@
-workflow "Main workflow" {
-  on = "release"
-  resolves = ["Build and deploy with MkDocs"]
+workflow "MkDocs workflow" {
+  on = "push"
+  resolves = ["Build and deploy"]
 }
 
-action "Build and deploy with MkDocs" {
+action "master" {
+  uses = "actions/bin/filter@master"
+  args = "branch master"
+}
+
+action "Build and deploy" {
+  needs = "master"
   uses = "./.github/mkdocs/"
   secrets = [
     "ACTIONS_DEPLOY_KEY"

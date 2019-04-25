@@ -26,7 +26,7 @@
 
 ### (3) Update releases
 
-Triggered when a release is `published`, `unpublished`, `created`, `edited`, `deleted`, or `prereleased`.
+When you push to master branch, GitHub Actions runs.
 
 
 
