@@ -1,11 +1,11 @@
 workflow "Main workflow" {
-  on = "release"
+  on = "push"
   resolves = ["Build and deploy with MkDocs"]
 }
 
 action "Build and deploy with MkDocs" {
   uses = "./.github/mkdocs/"
   secrets = [
-    "GITHUB_TOKEN"
+    "GIT_DEPLOY_KEY"
   ]
 }

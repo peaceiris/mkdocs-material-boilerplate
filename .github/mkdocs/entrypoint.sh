@@ -3,21 +3,25 @@
 # Fail on unset variables and command errors
 set -ex -o pipefail # -x: is for debugging
 
-git config user.name "${GITHUB_ACTOR}"
-git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-
-remote_branch="gh-pages"
-
-git worktree add -B "${remote_branch}" site "origin/${remote_branch}"
-cd site
-git pull origin "${remote_branch}"
-cd ..
+mkdir /root/.ssh
+ssh-keyscan -t rsa github.com > /root/.ssh/known_hosts
+echo "${GITHUB_ACTIONS_DEPLOY_KEY}" > /root/.ssh/id_rsa
+chmod 400 /root/.ssh/id_rsa
 
 mkdocs build
 
+remote_repo="git@github.com:${GITHUB_REPOSITORY}.git"
+remote_branch="gh-pages"
+
 cd site
+git init
+git config user.name "${GITHUB_ACTOR}"
+git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+git remote add origin "${remote_repo}"
+git checkout "${remote_branch}" || git checkout --orphan "${remote_branch}"
 git add --all
 timestamp=$(date -u)
 git commit -m "Automated deployment to GitHub Pages on ${timestamp}"
-git push origin "${remote_branch}"
+git push origin "${remote_branch}" --force
+rm -fr .git
 cd ..
