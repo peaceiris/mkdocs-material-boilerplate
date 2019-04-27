@@ -10,7 +10,7 @@ action "master" {
 
 action "Build and deploy" {
   needs = "master"
-  uses = "peaceiris/actions-mkdocs-gh-pages@master"
+  uses = "peaceiris/actions-mkdocs-gh-pages@v1.0.2"
   secrets = [
     "ACTIONS_DEPLOY_KEY"
   ]
