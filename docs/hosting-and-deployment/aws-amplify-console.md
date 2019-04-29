@@ -1,13 +1,16 @@
 # Host on AWS Amplify Console
 
-- [Demo site on Amplify Console] (build & deploy with Amplify Console)
-    - ID: `github`
-    - Password: `OhGhiNu5On5Ohzuva6ma`
+- [AWS Amplify Console]
 
-You can use **Password protection**.
+You can use **Password protection** each branch.
+
+Use the following build specification YML file.
+
+- [mkdocs-material-boilerplate/amplify.yml]
 
 
 
 <!-- Internal References -->
 <!-- External References -->
-[Demo site on Amplify Console]: https://master.d1ymzxwumyxuh1.amplifyapp.com/
+[AWS Amplify Console]: https://aws.amazon.com/amplify/console/
+[mkdocs-material-boilerplate/amplify.yml]: https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/amplify.yml
