@@ -35,7 +35,7 @@ git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
 cd mkdocs-material-boilerplate
 pipenv sync
 pipenv shell
-inv serve
+inv serve --config mkdocs-sample.yml
 ```
 
 

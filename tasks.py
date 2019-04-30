@@ -25,13 +25,13 @@ def open_browser(addr):
 @task(help={
     "addr": "IP address and port to serve documentation locally (default: localhost:8000)"
 })
-def serve(c, addr="localhost:8000"):
+def serve(c, addr="localhost:8000", config="mkdocs.yml"):
     """
     Serve site and open browser
     """
     with confu.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
         executor.submit(open_browser, addr)
-        c.run(f"mkdocs serve --dev-addr={addr}")
+        c.run(f"mkdocs serve --dev-addr={addr} --config-file {config}")
 
 
 @task
