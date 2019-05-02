@@ -16,7 +16,7 @@ action "merged-filter" {
 
 action "Build and deploy" {
   needs = "merged-filter"
-  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.2"
+  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.3"
   env = {
     MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
   }
