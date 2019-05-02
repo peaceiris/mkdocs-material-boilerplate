@@ -34,20 +34,10 @@ inv serve
 Serving on [localhost:8000](http://localhost:8000)
 
 ```sh
-# set ip and port
-inv serve --addr='localhost:5000'
-```
-
-### `mkdocs build`
-
-```sh
-inv build
-```
-
-### `mkdocs gh-deploy`
-
-```sh
-inv deploy
+# set IP and port
+inv serve --dev-addr 'localhost:5000'
+# set config file
+inv serve --config-file ./mkdocs-sample.yml
 ```
 
 ### Show all tasks
@@ -56,8 +46,6 @@ inv deploy
 $ inv --list
 Available tasks:
 
-  build    Build site
-  deploy   Deploy to GitHub Pages
   serve    Serve site and open browser
 ```
 
@@ -71,7 +59,8 @@ Docstring:
   Serve site and open browser
 
 Options:
-  -a STRING, --addr=STRING   IP address and port to serve documentation locally (default: localhost:8000)
+  -c STRING, --config-file=STRING   Provide a specific MkDocs config
+  -d STRING, --dev-addr=STRING      IP address and port to serve documentation locally (default: localhost:8000)
 ```
 
 Tasks are defined by [tasks.py](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/tasks.py)
@@ -85,6 +74,7 @@ pipenv task are also defined by [Pipfile](https://github.com/peaceiris/mkdocs-ma
 ```sh
 pipenv run version    # mkdocs --version
 pipenv run help       # mkdocs --help
+pipenv run inv serve  # inv serve
 pipenv run serve      # mkdocs serve
 pipenv run build      # mkdocs build
 pipenv run gh-deploy  # mkdocs gh-deploy
