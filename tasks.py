@@ -23,28 +23,13 @@ def open_browser(addr):
 
 
 @task(help={
-    "addr": "IP address and port to serve documentation locally (default: localhost:8000)"
+    "config-file": "Provide a specific MkDocs config",
+    "dev-addr": "IP address and port to serve documentation locally (default: localhost:8000)"
 })
-def serve(c, addr="localhost:8000"):
+def serve(c, config_file="mkdocs.yml", dev_addr="localhost:8000"):
     """
     Serve site and open browser
     """
     with confu.ThreadPoolExecutor(max_workers=os.cpu_count()) as executor:
-        executor.submit(open_browser, addr)
-        c.run(f"mkdocs serve --dev-addr={addr}")
-
-
-@task
-def build(c):
-    """
-    Build site
-    """
-    c.run("mkdocs build")
-
-
-@task
-def deploy(c):
-    """
-    Deploy to GitHub Pages
-    """
-    c.run("mkdocs gh-deploy")
+        executor.submit(open_browser, dev_addr)
+        c.run(f"mkdocs serve --config-file {config_file} --dev-addr {dev_addr}")
