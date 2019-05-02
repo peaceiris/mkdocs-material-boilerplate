@@ -10,7 +10,7 @@ action "master" {
 
 action "Build and deploy" {
   needs = "master"
-  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.1"
+  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.2"
   env = {
     MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
   }
