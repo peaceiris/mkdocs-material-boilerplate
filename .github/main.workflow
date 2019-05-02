@@ -3,14 +3,20 @@ workflow "MkDocs workflow" {
   resolves = ["Build and deploy"]
 }
 
-action "master" {
+action "branch-filter" {
   uses = "actions/bin/filter@master"
   args = "branch master"
 }
 
+action "merged-filter" {
+  needs = "branch-filter"
+  uses = "actions/bin/filter@master"
+  args = "merged true"
+}
+
 action "Build and deploy" {
-  needs = "master"
-  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.1"
+  needs = "merged-filter"
+  uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.3"
   env = {
     MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
   }
