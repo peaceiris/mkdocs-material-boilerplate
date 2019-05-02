@@ -9,13 +9,12 @@ action "branch-filter" {
 }
 
 action "merged-filter" {
-  needs = "branch-filter"
   uses = "actions/bin/filter@master"
   args = "merged true"
 }
 
 action "Build and deploy" {
-  needs = "merged-filter"
+  needs = ["merged-filter", "branch-filter"]
   uses = "peaceiris/actions-mkdocs-gh-pages@v1.1.3"
   env = {
     MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
