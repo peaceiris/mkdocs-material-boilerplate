@@ -67,6 +67,7 @@ nav:
   - 'Getting started':
     - 'Download boilerplate': 'getting-started/download-boilerplate.md'
     - 'pipenv': 'getting-started/pipenv.md'
+    - 'invoke': 'getting-started/invoke.md'
     - 'Docker': 'getting-started/docker.md'
     - 'pip': 'getting-started/pip.md'
   - 'Hosting and Deployment':
