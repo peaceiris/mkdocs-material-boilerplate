@@ -4,7 +4,7 @@ jinja2==2.10.1
 livereload==2.6.0
 markdown==3.1
 markupsafe==1.1.1
-mkdocs-material==4.1.2
+mkdocs-material==4.2.0
 mkdocs==1.0.4
 prompt-toolkit==2.0.9
 pygments==2.3.1

@@ -13,6 +13,7 @@ repo_url: 'https://github.com/peaceiris/mkdocs-material-boilerplate'
 edit_uri: 'https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs'
 
 # Configuration
+docs_dir: 'docs_sample'
 theme:
   name: 'material'
   language: 'en'
@@ -66,6 +67,7 @@ nav:
   - 'Getting started':
     - 'Download boilerplate': 'getting-started/download-boilerplate.md'
     - 'pipenv': 'getting-started/pipenv.md'
+    - 'invoke': 'getting-started/invoke.md'
     - 'Docker': 'getting-started/docker.md'
     - 'pip': 'getting-started/pip.md'
   - 'Hosting and Deployment':
