@@ -33,7 +33,7 @@ Read more 👉 [Documentation - MkDocs Material Boilerplate]
 ```sh
 git clone https://github.com/peaceiris/mkdocs-material-boilerplate.git
 cd mkdocs-material-boilerplate
-pipenv sync
+pipenv sync --dev
 pipenv shell
 inv serve --config mkdocs-sample.yml
 ```

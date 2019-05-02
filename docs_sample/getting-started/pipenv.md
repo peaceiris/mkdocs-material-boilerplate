@@ -9,8 +9,8 @@
 ## Install all packages
 
 ```sh
-pipenv sync   # Installs all packages specified in Pipfile.lock.
-pipenv shell  # Spawns a shell within the virtualenv.
+pipenv sync --dev  # Installs all packages specified in Pipfile.lock.
+pipenv shell       # Spawns a shell within the virtualenv.
 ```
 
 
