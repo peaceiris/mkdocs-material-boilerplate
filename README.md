@@ -3,7 +3,7 @@
 <br>MkDocs Material<br>Boilerplate - Starter Kit
 </h1>
 
-![material.png](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs_sample/images/material.png)
+![Eyecatch image of MkDocs Material Boilerplate (Starter Kit)](https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/master/docs_sample/images/material.png)
 
 
 
