@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "313904c93d6788f55d3973680f4957c320ecd1605130193a0d9c5a28e18c486e"
+            "sha256": "6428c4993e2fb2ffaf75fa1be4848b811a7fe7fbb1e5b74866a3113db6ec095f"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -33,10 +33,10 @@
         },
         "livereload": {
             "hashes": [
-                "sha256:29cadfabcedd12eed792e0131991235b9d4764d4474bed75cf525f57109ec0a2",
-                "sha256:e632a6cd1d349155c1d7f13a65be873b38f43ef02961804a1bba8d817fa649a7"
+                "sha256:78d55f2c268a8823ba499305dcac64e28ddeb9a92571e12d543cd304faf5817b",
+                "sha256:89254f78d7529d7ea0a3417d224c34287ebfe266b05e67e51facaf82c27f0f66"
             ],
-            "version": "==2.6.0"
+            "version": "==2.6.1"
         },
         "markdown": {
             "hashes": [
@@ -88,11 +88,11 @@
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:4ffe7d8c0c3c53c5313a910c14a88820be74beebb53ed14c9056e521ea9793d5",
-                "sha256:d64b9555ae4ee86fe07a18612c9bd488f3b74a0afd3d9ead7e29efc59d98ca80"
+                "sha256:1c39b6af13a900d9f47ab2b8ac67b3258799f4570b552573e9d6868ad6a438e9",
+                "sha256:22073941cff7176e810b719aced6a90381e64a96d346b8a6803a06b7192b7ad5"
             ],
             "index": "pypi",
-            "version": "==4.2.0"
+            "version": "==4.3.0"
         },
         "prompt-toolkit": {
             "hashes": [
@@ -105,11 +105,11 @@
         },
         "pygments": {
             "hashes": [
-                "sha256:5ffada19f6203563680669ee7f53b64dabbeb100eb51b61996085e99c03b284a",
-                "sha256:e8218dd399a61674745138520d0d4cf2621d7e032439341bc3f647bff125818d"
+                "sha256:31cba6ffb739f099a85e243eff8cb717089fdd3c7300767d9fc34cb8e1b065f5",
+                "sha256:5ad302949b3c98dd73f8d9fcdc7e9cb592f120e32a18e23efd7f3dc51194472b"
             ],
             "index": "pypi",
-            "version": "==2.3.1"
+            "version": "==2.4.0"
         },
         "pymdown-extensions": {
             "hashes": [
