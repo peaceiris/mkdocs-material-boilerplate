@@ -10,7 +10,7 @@ copyright: '&copy; 2019 peaceiris'
 # Repository
 repo_name: 'GitHub'
 repo_url: 'https://github.com/peaceiris/mkdocs-material-boilerplate'
-edit_uri: 'https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs'
+edit_uri: 'https://github.com/peaceiris/mkdocs-material-boilerplate/edit/master/docs_sample'
 
 # Configuration
 docs_dir: 'docs_sample'
