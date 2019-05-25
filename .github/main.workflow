@@ -16,7 +16,7 @@ action "pipenv-sync" {
 
 action "mkdocs-build" {
   needs = ["pipenv-sync"]
-  uses = "./.github/pipenv"
+  uses = "peaceiris/actions-pipenv@3.6"
   args = ["run", "mkdocs", "build", "--config-file", "./mkdocs-sample.yml"]
 }
 
