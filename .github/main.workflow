@@ -10,7 +10,7 @@ action "branch-filter" {
 
 action "pipenv-sync" {
   needs = ["branch-filter"]
-  uses = "./.github/pipenv"
+  uses = "peaceiris/actions-pipenv@3.7"
   args = "sync"
 }
 
