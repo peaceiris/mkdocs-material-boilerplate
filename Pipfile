@@ -25,5 +25,5 @@ allow_prereleases = true
 version = "mkdocs --version"
 help = "mkdocs --help"
 serve = "inv serve"
-build = "inv build"
-gh-deploy = "inv deploy"
+build = "mkdocs build"
+gh-deploy = "mkdocs deploy"

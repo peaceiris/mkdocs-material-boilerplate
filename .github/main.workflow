@@ -1,18 +1,31 @@
 workflow "MkDocs workflow" {
   on = "push"
-  resolves = ["Build and deploy"]
+  resolves = ["deploy"]
 }
 
 action "branch-filter" {
   uses = "actions/bin/filter@master"
-  args = "branch master"
+  args = "branch fix-action"
 }
 
-action "Build and deploy" {
+action "pipenv-sync" {
   needs = ["branch-filter"]
-  uses = "peaceiris/actions-mkdocs-gh-pages@v1.2.0"
+  uses = "./.github/pipenv"
+  args = "sync"
+}
+
+action "mkdocs-build" {
+  needs = ["pipenv-sync"]
+  uses = "./.github/pipenv"
+  args = ["run", "mkdocs", "build", "--config-file", "./mkdocs-sample.yml"]
+}
+
+action "deploy" {
+  needs = ["mkdocs-build"]
+  uses = "peaceiris/actions-gh-pages@v1.0.0"
   env = {
-    MKDOCS_BUILD_OPTIONS = "--config-file ./mkdocs-sample.yml"
+    PUBLISH_DIR = "./site"
+    PUBLISH_BRANCH = "gh-pages"
   }
   secrets = ["ACTIONS_DEPLOY_KEY"]
 }
