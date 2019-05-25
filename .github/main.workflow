@@ -5,7 +5,7 @@ workflow "MkDocs workflow" {
 
 action "branch-filter" {
   uses = "actions/bin/filter@master"
-  args = "branch fix-action"
+  args = "branch master"
 }
 
 action "pipenv-sync" {
