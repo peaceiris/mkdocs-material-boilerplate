@@ -10,13 +10,13 @@ action "branch-filter" {
 
 action "pipenv-sync" {
   needs = ["branch-filter"]
-  uses = "peaceiris/actions-pipenv@3.7"
+  uses = "peaceiris/actions-pipenv@3.6"
   args = "sync"
 }
 
 action "mkdocs-build" {
   needs = ["pipenv-sync"]
-  uses = "peaceiris/actions-pipenv@3.7"
+  uses = "peaceiris/actions-pipenv@3.6"
   args = ["run", "mkdocs", "build", "--config-file", "./mkdocs-sample.yml"]
 }
 
