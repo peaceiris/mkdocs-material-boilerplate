@@ -8,8 +8,13 @@ action "branch-filter" {
   args = "branch master"
 }
 
+action "is-not-branch-deleted" {
+  uses = "actions/bin/filter@master"
+  args = "not deleted_branch"
+}
+
 action "pipenv-sync" {
-  needs = ["branch-filter"]
+  needs = ["branch-filter", "is-not-branch-deleted"]
   uses = "peaceiris/actions-pipenv@3.6"
   args = "sync"
 }
