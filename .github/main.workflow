@@ -10,7 +10,7 @@ action "branch-filter" {
 
 action "is-not-branch-deleted" {
   uses = "actions/bin/filter@master"
-  args = "not deleted_branch"
+  args = "not deleted"
 }
 
 action "pipenv-sync" {
