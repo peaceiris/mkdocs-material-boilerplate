@@ -6,7 +6,8 @@
 
 ## Build and deploy with GitHub Actions
 
-- [GitHub Actions for MkDocs and GitHub Pages - Build markdown documentation with Material for MkDocs and deploy to GitHub Pages with automatically.](https://github.com/peaceiris/actions-mkdocs-gh-pages)
+- [peaceiris/actions-pipenv: GitHub Actions for Python project with pipenv](https://github.com/peaceiris/actions-pipenv)
+- [peaceiris/actions-gh-pages: GitHub Actions for deploying to GitHub Pages with Static Site Generators](https://github.com/peaceiris/actions-gh-pages)
 
 
 
