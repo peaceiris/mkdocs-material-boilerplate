@@ -5,7 +5,7 @@ workflow "MkDocs workflow" {
 
 action "branch-filter" {
   uses = "actions/bin/filter@master"
-  args = "branch add-filter-action"
+  args = "branch master"
 }
 
 action "is-not-branch-deleted" {
