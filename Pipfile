@@ -9,7 +9,7 @@ mkdocs-material = "==4.3.1"
 python-markdown-math = "==0.6"
 Pygments = "==2.4.2"
 prompt_toolkit = "==2.0.9"
-pyyaml = "==5.1"
+pyyaml = "==5.1.1"
 Jinja2 = "==2.10.1"
 
 [dev-packages]
