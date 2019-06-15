@@ -1,10 +1,13 @@
--i https://pypi.org/simple/
+-i https://pypi.org/simple
 click==7.0
+htmlmin==0.1.12
 jinja2==2.10.1
+jsmin==2.2.2
 livereload==2.6.1
 markdown==3.1.1
 markupsafe==1.1.1
-mkdocs-material==4.3.1
+mkdocs-material==4.4.0
+mkdocs-minify-plugin==0.2.1
 mkdocs==1.0.4
 prompt-toolkit==2.0.9
 pygments==2.4.2
