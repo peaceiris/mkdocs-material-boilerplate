@@ -5,7 +5,7 @@
 ## GitHub Pages and GitHub
 
 - Host source code on GitHub.
-- Deploy and deploy with:
+- Build and deploy with:
     - `mkdocs gh-deploy`
     - CircleCI
     - GitHub Actions
