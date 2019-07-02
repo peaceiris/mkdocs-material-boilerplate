@@ -3,7 +3,7 @@ FROM python:3.6-alpine
 LABEL maintainer="peaceiris"
 
 # Install requirements
-ADD ./requirements.txt /root
+COPY ./requirements.txt /root
 WORKDIR /root
 RUN pip install --upgrade pip && pip install -r requirements.txt
 
