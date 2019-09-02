@@ -655,15 +655,14 @@
 </ul>
 <h2 id="build_and_deploy_with_mkdocs_gh-deploy">Build and deploy with <code>mkdocs gh-deploy</code><a class="headerlink" href="#build_and_deploy_with_mkdocs_gh-deploy" title="Permanent link">&para;</a></h2>
 <h3 id="pipenv">pipenv<a class="headerlink" href="#pipenv" title="Permanent link">&para;</a></h3>
-<div class="codehilite"><pre><span></span><span class="n">pipenv</span> <span class="n">run</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
+<div class="codehilite"><pre><span></span><span class="n">pipenv</span> <span class="n">run</span> <span class="n">deploy</span>
 
 <span class="o">#</span> <span class="k">OR</span>
 <span class="n">pipenv</span> <span class="n">shell</span>
 <span class="n">mkdocs</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
 
 <span class="o">#</span> <span class="k">OR</span>
-<span class="n">pipenv</span> <span class="n">shell</span>
-<span class="n">inv</span> <span class="n">deploy</span>
+<span class="n">pipenv</span> <span class="n">run</span> <span class="n">mkdocs</span> <span class="n">gh</span><span class="o">-</span><span class="n">deploy</span>
 </pre></div>
 
 
@@ -776,7 +775,7 @@
       
       <script>app.initialize({version:"1.0.4",url:{base:"../.."}})</script>
       
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
     
   </body>
