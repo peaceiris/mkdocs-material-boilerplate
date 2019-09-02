@@ -5,15 +5,15 @@ verify_ssl = true
 
 [packages]
 mkdocs = "==1.0.4"
-mkdocs-material = "==4.4.0"
+mkdocs-material = "==4.4.2"
 python-markdown-math = "==0.6"
 Pygments = "==2.4.2"
 prompt_toolkit = "==2.0.9"
-pyyaml = "==5.1.1"
+pyyaml = "==5.1.2"
 Jinja2 = "==2.10.1"
 
 [dev-packages]
-invoke = "==1.2.0"
+invoke = "*"
 
 [requires]
 python_version = "3.6"
