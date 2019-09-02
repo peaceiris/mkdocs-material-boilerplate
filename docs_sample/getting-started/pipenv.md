@@ -43,5 +43,5 @@ pipenv run help       # mkdocs --help
 pipenv run inv serve  # inv serve
 pipenv run serve      # mkdocs serve
 pipenv run build      # mkdocs build
-pipenv run gh-deploy  # mkdocs gh-deploy
+pipenv run deploy     # mkdocs gh-deploy
 ```

@@ -1,12 +1,11 @@
-version: 0.1
+version: 1.0
 frontend:
   phases:
     # IMPORTANT - Please verify your build commands
     preBuild:
       commands:
-        - yum -y install python36 python36-devel python36-pip
-        - python3.6 -m pip install --upgrade pip
-        - python3.6 -m pip install -r requirements.txt
+        - python3 -m pip install --upgrade pip
+        - python3 -m pip install -r requirements.txt
     build:
       commands:
         - mkdocs build

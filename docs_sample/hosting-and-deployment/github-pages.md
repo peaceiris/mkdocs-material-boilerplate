@@ -16,15 +16,14 @@
 ### pipenv
 
 ```
-pipenv run gh-deploy
+pipenv run deploy
 
 # OR
 pipenv shell
 mkdocs gh-deploy
 
 # OR
-pipenv shell
-inv deploy
+pipenv run mkdocs gh-deploy
 ```
 
 ### Docker
