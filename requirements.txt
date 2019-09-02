@@ -1,4 +1,4 @@
--i https://pypi.org/simple
+-i https://pypi.org/simple/
 click==7.0
 htmlmin==0.1.12
 jinja2==2.10.1
@@ -14,7 +14,7 @@ prompt-toolkit==2.0.9
 pygments==2.4.2
 pymdown-extensions==6.1
 python-markdown-math==0.6
-pyyaml==5.1.1
+pyyaml==5.1.2
 six==1.12.0
 tornado==6.0.3
 wcwidth==0.1.7
