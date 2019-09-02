@@ -47,7 +47,7 @@ markdown_extensions:
 
 # Customization
 extra_javascript:
-  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML'
+  - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML'
 extra_css:
   - 'assets/css/custom.css'
 extra:
