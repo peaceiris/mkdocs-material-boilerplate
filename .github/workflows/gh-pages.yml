@@ -1,0 +1,36 @@
+name: github pages
+
+on:
+  push:
+    branches:
+    - master
+    - 'release-v*'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-18.04
+    strategy:
+      max-parallel: 1
+      matrix:
+        python-version: [3.6]
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Set up Python ${{ matrix.python-version }}
+      uses: actions/setup-python@v1
+      with:
+        python-version: ${{ matrix.python-version }}
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    - name: Build with MkDocs
+      run: mkdocs build --config-file ./mkdocs-sample.yml
+    - name: Deploy to GitHub Pages
+      uses: docker://peaceiris/gh-pages:latest
+      if: success()
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        PUBLISH_BRANCH: gh-pages
+        PUBLISH_DIR: ./site
