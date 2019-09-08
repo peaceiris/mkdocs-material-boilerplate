@@ -6,7 +6,6 @@
 
 ## Build and deploy with GitHub Actions
 
-- [peaceiris/actions-pipenv: GitHub Actions for Python project with pipenv](https://github.com/peaceiris/actions-pipenv)
 - [peaceiris/actions-gh-pages: GitHub Actions for deploying to GitHub Pages with Static Site Generators](https://github.com/peaceiris/actions-gh-pages)
 
 
@@ -16,15 +15,14 @@
 ### pipenv
 
 ```
-pipenv run gh-deploy
+pipenv run deploy
 
 # OR
 pipenv shell
 mkdocs gh-deploy
 
 # OR
-pipenv shell
-inv deploy
+pipenv run mkdocs gh-deploy
 ```
 
 ### Docker
