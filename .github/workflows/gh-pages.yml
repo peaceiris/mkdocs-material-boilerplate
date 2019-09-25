@@ -26,7 +26,7 @@ jobs:
       run: mkdocs build --config-file ./mkdocs-sample.yml
 
     - name: Deploy to GitHub Pages
-      uses: docker://peaceiris/gh-pages:v2.2.0
+      uses: docker://peaceiris/gh-pages:v2.4.0
       env:
         ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         PUBLISH_BRANCH: gh-pages
