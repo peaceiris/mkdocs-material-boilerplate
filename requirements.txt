@@ -6,13 +6,13 @@ jsmin==2.2.2
 livereload==2.6.1
 markdown==3.1.1
 markupsafe==1.1.1
-mkdocs-material==4.4.3
+mkdocs-material==4.5.0
 mkdocs-minify-plugin==0.2.1
 mkdocs==1.0.4
 pep562==1.0
 prompt-toolkit==2.0.10
 pygments==2.4.2
-pymdown-extensions==6.1
+pymdown-extensions==6.2
 python-markdown-math==0.6
 pyyaml==5.1.2
 six==1.13.0
