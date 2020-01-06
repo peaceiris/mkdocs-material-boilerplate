@@ -203,12 +203,12 @@
     "develop": {
         "invoke": {
             "hashes": [
-                "sha256:c52274d2e8a6d64ef0d61093e1983268ea1fc0cd13facb9448c4ef0c9a7ac7da",
-                "sha256:f4ec8a134c0122ea042c8912529f87652445d9f4de590b353d23f95bfa1f0efd",
-                "sha256:fc803a5c9052f15e63310aa81a43498d7c55542beb18564db88a9d75a176fa44"
+                "sha256:4668a4a594a47f2da2f0672ec2f7b1566f809cebf10bcd95ce2de9ecf39b95d1",
+                "sha256:ae7b4513638bde9afcda0825e9535599637a3f65bd819a27098356027bb17c8a",
+                "sha256:e04faba8ea7cdf6f5c912be42dcafd5c1074b7f2f306998992c4bfb40a9a690b"
             ],
             "index": "pypi",
-            "version": "==1.3.0"
+            "version": "==1.4.0"
         }
     }
 }
