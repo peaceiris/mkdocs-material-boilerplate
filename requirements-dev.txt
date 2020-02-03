@@ -1,2 +1,2 @@
 -i https://pypi.org/simple/
-invoke==1.4.0
+invoke==1.4.1
