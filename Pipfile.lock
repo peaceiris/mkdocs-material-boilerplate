@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "71a377a20ebe5f1c02587374ba36155a158590a8af66d4ab6249aed438863262"
+            "sha256": "920cf7a1eb7b230556cacaf80910e6fce416dcad209ed9871d52954bb05f3c39"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -52,10 +52,10 @@
         },
         "markdown": {
             "hashes": [
-                "sha256:2e50876bcdd74517e7b71f3e7a76102050edec255b3983403f1a63e7c8a41e7a",
-                "sha256:56a46ac655704b91e5b7e6326ce43d5ef72411376588afa1dd90e881b83c7e8c"
+                "sha256:5ad7180c3ec16422a764568ad6409ec82460c40d1631591fa53d597033cc98bf",
+                "sha256:9c71241ec237505535eabff7a38b1307250f16cea174bb1e505c3e032f108867"
             ],
-            "version": "==3.1.1"
+            "version": "==3.2"
         },
         "markupsafe": {
             "hashes": [
@@ -105,11 +105,11 @@
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:89a8e2527ca8426c40f2213ce53513f73f54d0a32b36aef33fde6849d294e9ec",
-                "sha256:b21aa2645ccb11442ea381c92d187bbc94127f50702c0d28c3fc0152fa7b29da"
+                "sha256:294275c4d3f3e5711b27645b013a0afe8b22a8ace8db81099cb1403ad47b4af5",
+                "sha256:4f32bfc8f8da74abc0bc65116d7f9e3d6b2e3e2dc43b61cfaab72e151c9c0431"
             ],
             "index": "pypi",
-            "version": "==4.6.0"
+            "version": "==4.6.2"
         },
         "mkdocs-minify-plugin": {
             "hashes": [
@@ -117,13 +117,6 @@
                 "sha256:d54fdd5be6843dd29fd7af2f7fdd20a9eb4db46f1f6bed914e03b2f58d2d488e"
             ],
             "version": "==0.2.1"
-        },
-        "pep562": {
-            "hashes": [
-                "sha256:58cb1cc9ee63d93e62b4905a50357618d526d289919814bea1f0da8f53b79395",
-                "sha256:d2a48b178ebf5f8dd31709cc26a19808ef794561fa2fe50ea01ea2bad4d667ef"
-            ],
-            "version": "==1.0"
         },
         "prompt-toolkit": {
             "hashes": [
@@ -143,10 +136,10 @@
         },
         "pymdown-extensions": {
             "hashes": [
-                "sha256:3bbe6048275f8a0d13a0fe44e0ea201e67268aa7bb40c2544eef16abbf168f7b",
-                "sha256:dce5e17b93be0572322b7d06c9a13c13a9d98694d6468277911d50ca87d26f29"
+                "sha256:66fae2683c7a1dac53184f7de57f51f8dad73f9ead2f453e94e85096cb811335",
+                "sha256:cb879686a586b22292899771f5e5bc3382808e92aa938f71b550ecdea709419f"
             ],
-            "version": "==6.2.1"
+            "version": "==6.3"
         },
         "python-markdown-math": {
             "hashes": [
