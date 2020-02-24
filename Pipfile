@@ -4,7 +4,7 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [packages]
-mkdocs = "==1.0.4"
+mkdocs = "==1.1"
 mkdocs-material = "==4.6.3"
 python-markdown-math = "==0.6"
 Pygments = "==2.5.2"
