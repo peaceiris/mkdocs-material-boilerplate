@@ -2,7 +2,7 @@ version: 1
 update_configs:
   - package_manager: "python"
     directory: "/"
-    update_schedule: "monthly"
+    update_schedule: "live"
     default_labels:
       - "dependencies"
     commit_message:
