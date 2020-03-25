@@ -1,0 +1,30 @@
+name: Docker CI
+
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**.md"
+  pull_request:
+    types:
+      - opened
+      - synchronize
+    paths-ignore:
+      - "**.md"
+
+jobs:
+  hadolint:
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: brew install hadolint
+      - run: hadolint ./Dockerfile
+
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build
+        run: docker build -t peaceiris/mkdocs-material .
