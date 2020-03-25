@@ -5,9 +5,7 @@ LABEL maintainer="peaceiris"
 # Install requirements
 COPY ./requirements.txt /root
 WORKDIR /root
-RUN apk add --no-cache \
-    gcc && \
-    python3 -m pip install --upgrade pip && \
+RUN python3 -m pip install --upgrade pip && \
     python3 -m pip install -r ./requirements.txt
 
 # Expose MkDocs development server port
