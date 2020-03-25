@@ -1,5 +1,7 @@
 # Host on AWS Amplify Console
 
+[![amplifybutton](https://oneclick.amplifyapp.com/button.svg)](https://console.aws.amazon.com/amplify/home#/deploy?repo=https://github.com/peaceiris/mkdocs-material-boilerplate)
+
 - [AWS Amplify Console]
 
 You can use **Password protection** each branch.
