@@ -28,3 +28,10 @@ jobs:
 
       - name: Build
         run: docker build -t peaceiris/mkdocs-material .
+
+      - name: mkdocs build
+        run: |
+          docker run --rm \
+            -v "${PWD}:/root" \
+            peaceiris/mkdocs-material:latest build \
+            --config-file ./mkdocs-sample.yml

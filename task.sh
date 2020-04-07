@@ -27,16 +27,16 @@ case "$1" in
         docker run --rm -it -v "${PWD}:${DOCS_DIR}" -p 8000:8000 "${DOCKER_IMAGE}"
         ;;
     "build" | "--build" | "-b")
-        docker run --rm -it -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" build
+        docker run --rm -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" build
         ;;
     "deploy" | "--deploy" | "-d")
-        docker run --rm -it -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" gh-deploy
+        docker run --rm -v "${PWD}:${DOCS_DIR}" "${DOCKER_IMAGE}" gh-deploy
         ;;
     "version" | "-V" | "--version")
-        docker run --rm -it "${DOCKER_IMAGE}" --version
+        docker run --rm "${DOCKER_IMAGE}" --version
         ;;
     "help" | "--help" | "-h")
-        docker run --rm -it "${DOCKER_IMAGE}" --help
+        docker run --rm "${DOCKER_IMAGE}" --help
         ;;
     "pull" | "--pull" | "-p")
         docker pull "${DOCKER_IMAGE}"
