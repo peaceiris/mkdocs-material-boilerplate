@@ -59,9 +59,9 @@ extra_css:
 extra:
   manifest: 'manifest.json'
   social:
-    - icon: 'github'
+    - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/peaceiris'
-    - icon: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/piris314en'
 
 # Page tree
