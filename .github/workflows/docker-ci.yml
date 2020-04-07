@@ -28,3 +28,6 @@ jobs:
 
       - name: Build
         run: docker build -t peaceiris/mkdocs-material .
+
+      - name: mkdocs build
+        run: ./task.sh -b
