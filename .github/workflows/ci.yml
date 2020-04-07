@@ -1,4 +1,4 @@
-name: Docker CI
+name: CI
 
 on:
   push:
@@ -21,7 +21,21 @@ jobs:
       - run: brew install hadolint
       - run: hadolint ./Dockerfile
 
-  build:
+  pipenv:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Python
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.8'
+          architecture: 'x64'
+      - run: python3 -m pip install --upgrade pip
+      - run: python3 -m pip install pipenv
+      - run: pipenv sync --dev
+      - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
+
+  docker:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
