@@ -33,8 +33,7 @@ jobs:
       - run: python3 -m pip install --upgrade pip
       - run: python3 -m pip install pipenv
       - run: pipenv sync --dev
-      - run: pipenv shell
-      - run: mkdocs build --config-file ./mkdocs-sample.yml
+      - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   docker:
     runs-on: ubuntu-18.04
