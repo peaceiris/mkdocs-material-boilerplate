@@ -25,13 +25,13 @@ theme:
   palette:
     primary: 'blue'
     accent: 'blue'
-  feature:
-    tabs: false
+  features:
+    - tabs
   #font:
     #text: 'Ubuntu'
     #code: 'Ubuntu Mono'
-  #logo:
-    #icon: 'images/logo.svg'
+  #icon:
+    #logo: 'images/logo.svg'
   #favicon: 'assets/images/favicon.ico'
 
 # Extensions
@@ -45,6 +45,12 @@ markdown_extensions:
       permalink: true
       separator: '_'
 
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+
 # Customization
 extra_javascript:
   - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML'
@@ -52,12 +58,10 @@ extra_css:
   - 'assets/css/custom.css'
 extra:
   manifest: 'manifest.json'
-  search:
-    language: 'en'
   social:
-    - type: 'github'
+    - icon: 'fontawesome/brands/github-alt'
       link: 'https://github.com/peaceiris'
-    - type: 'twitter'
+    - icon: 'fontawesome/brands/twitter'
       link: 'https://twitter.com/piris314en'
 
 # Page tree
