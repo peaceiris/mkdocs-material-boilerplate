@@ -7,7 +7,7 @@ livereload==2.6.1
 lunr[languages]==0.5.6
 markdown==3.2.1
 markupsafe==1.1.1
-mkdocs-material==5.0.0
+mkdocs-material==5.0.1
 mkdocs==1.1
 nltk==3.5b1
 prompt-toolkit==3.0.5
