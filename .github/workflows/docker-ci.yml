@@ -30,4 +30,4 @@ jobs:
         run: docker build -t peaceiris/mkdocs-material .
 
       - name: mkdocs build
-        run: ./task.sh -b
+        run: docker run --rm peaceiris/mkdocs-material:latest build --config-file ./mkdocs-sample.yml
