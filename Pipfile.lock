@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8157138ebf3e3b94452df36d5bc8a2724dd5b10520989d5b679b4107a9539f00"
+            "sha256": "ecdeec20abcea4a0e57eb58ce11e9deaa45abc4b3c9793b39abe3935a27e84a7"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -31,11 +31,11 @@
         },
         "jinja2": {
             "hashes": [
-                "sha256:93187ffbc7808079673ef52771baa950426fd664d3aad1d0fa3e95644360e250",
-                "sha256:b0eaf100007721b5c16c1fc1eecb87409464edc10469ddc9a22a27a99123be49"
+                "sha256:89aab215427ef59c34ad58735269eb58b1a5808103067f7bb9d5836c651b3bb0",
+                "sha256:f0a4641d3cf955324a89c04f3d94663aa4d638abe8f733ecd3582848e1c37035"
             ],
             "index": "pypi",
-            "version": "==2.11.1"
+            "version": "==2.11.2"
         },
         "joblib": {
             "hashes": [
@@ -120,9 +120,9 @@
         },
         "nltk": {
             "hashes": [
-                "sha256:5a0395b88cb709ab4e7af6012bd573bd181f12bf6b9722b9473d1f880c0c6e39"
+                "sha256:845365449cd8c5f9731f7cb9f8bd6fd0767553b9d53af9eb1b3abf7700936b35"
             ],
-            "version": "==3.5b1"
+            "version": "==3.5"
         },
         "prompt-toolkit": {
             "hashes": [
