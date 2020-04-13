@@ -10,7 +10,7 @@ python-markdown-math = "==0.6"
 Pygments = "==2.6.1"
 prompt_toolkit = "==3.0.5"
 pyyaml = "==5.3.1"
-Jinja2 = "==2.11.1"
+Jinja2 = "==2.11.2"
 
 [dev-packages]
 invoke = "*"
