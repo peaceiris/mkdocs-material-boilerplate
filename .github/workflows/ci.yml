@@ -32,7 +32,10 @@ jobs:
           python-version: '3.8'
 
       - name: Upgrade pip
-        run: python3 -m pip install --upgrade pip
+        run: |
+          python3 -m pip -V
+          python3 -m pip install --upgrade pip
+          python3 -m pip -V
 
       - name: Get pip cache dir
         id: pip-cache
