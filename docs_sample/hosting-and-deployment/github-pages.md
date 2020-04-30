@@ -8,6 +8,8 @@
 
 - [peaceiris/actions-gh-pages: GitHub Actions for deploying to GitHub Pages with Static Site Generators](https://github.com/peaceiris/actions-gh-pages)
 
+Go to the repository and read the latest `README.md` for more details.
+
 
 
 ## Build and deploy with `mkdocs gh-deploy`
