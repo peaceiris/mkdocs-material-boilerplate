@@ -33,7 +33,7 @@ jobs:
 
       - name: Upgrade pip
         run: |
-          python3 -m pip -V
+          # install pip=>20.1 to use "pip cache dir"
           python3 -m pip install --upgrade pip
           python3 -m pip -V
 
