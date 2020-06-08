@@ -11,6 +11,32 @@
 
 
 
+## docker-compose
+
+Here is an example `docker-compose.yml`
+
+```yaml
+version: '3'
+
+services:
+  mkdocs:
+    image: peaceiris/mkdocs-material:v2.2.2
+    container_name: mkdocs_material_boilerplate
+    ports:
+      - 8888:8888
+    volumes:
+      - ${PWD}:/root
+    stdin_open: true
+    tty: true
+    command:
+      - "serve"
+      - "--dev-addr=0.0.0.0:8888"
+```
+
+Go to [http://localhost:8888/](http://localhost:8888/)
+
+
+
 ## Run docker with shell script
 
 ```sh
