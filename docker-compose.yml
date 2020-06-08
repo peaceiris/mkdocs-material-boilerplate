@@ -2,7 +2,7 @@ version: '3'
 
 services:
   mkdocs:
-    image: peaceiris/mkdocs-material:v2.2.2
+    image: peaceiris/mkdocs-material:latest
     container_name: mkdocs_material_boilerplate
     ports:
       - 8000:8000

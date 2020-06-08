@@ -46,12 +46,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Build
-        run: docker build -t peaceiris/mkdocs-material .
+      - name: Docker Build
+        run: docker build -t 'peaceiris/mkdocs-material:latest' .
 
       - name: mkdocs build
-        run: |
-          docker run --rm \
-            -v "${PWD}:/root" \
-            peaceiris/mkdocs-material:latest build \
-            --config-file ./mkdocs-sample.yml
+        run: docker-compose run --rm mkdocs build --config-file ./mkdocs-sample.yml
