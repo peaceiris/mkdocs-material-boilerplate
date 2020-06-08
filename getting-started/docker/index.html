@@ -389,6 +389,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    docker-compose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#run_docker_with_shell_script" class="md-nav__link">
     Run docker with shell script
   </a>
@@ -620,6 +627,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#docker-compose" class="md-nav__link">
+    docker-compose
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#run_docker_with_shell_script" class="md-nav__link">
     Run docker with shell script
   </a>
@@ -654,6 +668,27 @@
 <!-- https://dockeri.co/ -->
 
 <p><a href="https://hub.docker.com/r/peaceiris/mkdocs-material"><img alt="DockerHub Badge" src="https://dockeri.co/image/peaceiris/mkdocs-material" /></a></p>
+<h2 id="docker-compose">docker-compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
+<p>Here is an example <code>docker-compose.yml</code></p>
+<div class="codehilite"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3&#39;</span>
+
+<span class="nt">services</span><span class="p">:</span>
+  <span class="nt">mkdocs</span><span class="p">:</span>
+    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">peaceiris/mkdocs-material:v2.2.2</span>
+    <span class="nt">container_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs_material_boilerplate</span>
+    <span class="nt">ports</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8888:8888</span>
+    <span class="nt">volumes</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">${PWD}:/root</span>
+    <span class="nt">stdin_open</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">tty</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">command</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;serve&quot;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;--dev-addr=0.0.0.0:8888&quot;</span>
+</code></pre></div>
+
+
+<p>Go to <a href="http://localhost:8888/">http://localhost:8888/</a></p>
 <h2 id="run_docker_with_shell_script">Run docker with shell script<a class="headerlink" href="#run_docker_with_shell_script" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>./task.sh -p  <span class="c1"># docker pull peaceiris/mkdocs-material</span>
 
