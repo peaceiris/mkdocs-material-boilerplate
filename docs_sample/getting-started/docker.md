@@ -23,41 +23,26 @@ services:
     image: peaceiris/mkdocs-material:v2.2.2
     container_name: mkdocs_material_boilerplate
     ports:
-      - 8888:8888
+      - 8000:8000
     volumes:
       - ${PWD}:/root
     stdin_open: true
     tty: true
     command:
       - "serve"
-      - "--dev-addr=0.0.0.0:8888"
+      - "--dev-addr=0.0.0.0:8000"
+      - "--config-file"
+      - "./mkdocs-sample.yml"
 ```
-
-Go to [http://localhost:8888/](http://localhost:8888/)
-
-
-
-## Run docker with shell script
 
 ```sh
-./task.sh -p  # docker pull peaceiris/mkdocs-material
-
-./task.sh -s  # mkdocs serve
-./task.sh -b  # mkdocs build
-./task.sh -d  # mkdocs gh-deploy
-./task.sh -V  # mkdocs --version
-./task.sh -h  # mkdocs --help
-
-docker build -t peaceiris/mkdocs-material .
+docker-compose up
 ```
 
-Serving on [localhost:8000](http://localhost:8000)
-
-Task are defined by [task.sh]
+Go to [http://localhost:8000/](http://localhost:8000/)
 
 
 
 <!-- Internal References -->
 <!-- External References -->
 [peaceiris/mkdocs-material - Docker Hub]: https://hub.docker.com/r/peaceiris/mkdocs-material
-[task.sh]: https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/task.sh

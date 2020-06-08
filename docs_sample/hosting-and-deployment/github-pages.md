@@ -27,17 +27,6 @@ mkdocs gh-deploy
 pipenv run mkdocs gh-deploy
 ```
 
-### Docker
-
-1. Create a [Personal access token]. (Check only `repo`)
-2. Run the following scripts.
-
-```
-./task.sh -d  # mkdocs gh-deploy
-# Enter github username
-# Enter the Personal access token
-```
-
 
 
 ## Build and deploy with CircleCI
