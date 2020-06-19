@@ -13,3 +13,12 @@ updates:
   - dependencies
   commit-message:
     prefix: deps
+
+- package-ecosystem: "github-actions"
+  directory: "/"
+  schedule:
+    interval: "daily"
+    time: '11:00'
+    timezone: Japan
+  commit-message:
+    prefix: ci
