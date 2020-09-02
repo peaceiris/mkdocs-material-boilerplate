@@ -62,6 +62,6 @@ inv serve --config-file mkdocs-sample.yml
 
 
 
-## Support author
+## About Maintainer
 
-- [Amazon wish list](http://amzn.asia/ilWK0Yj)
+- [peaceiris Homepage](https://peaceiris.com/)
