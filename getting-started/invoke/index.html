@@ -588,7 +588,6 @@
 <div class="codehilite"><pre><span></span><code>inv serve
 </code></pre></div>
 
-
 <p>Serving on <a href="http://localhost:8000">localhost:8000</a></p>
 <div class="codehilite"><pre><span></span><code><span class="c1"># set IP and port</span>
 inv serve --dev-addr <span class="s1">&#39;localhost:5000&#39;</span>
@@ -596,14 +595,12 @@ inv serve --dev-addr <span class="s1">&#39;localhost:5000&#39;</span>
 inv serve --config-file ./mkdocs-sample.yml
 </code></pre></div>
 
-
 <h2 id="show_all_tasks">Show all tasks<a class="headerlink" href="#show_all_tasks" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>$ inv --list
 Available tasks:
 
   serve    Serve site and open browser
 </code></pre></div>
-
 
 <p>Show task help.</p>
 <div class="codehilite"><pre><span></span><code>$ inv serve --help
@@ -616,7 +613,6 @@ Options:
   -c STRING, --config-file<span class="o">=</span>STRING   Provide a specific MkDocs config
   -d STRING, --dev-addr<span class="o">=</span>STRING      IP address and port to serve documentation locally <span class="o">(</span>default: localhost:8000<span class="o">)</span>
 </code></pre></div>
-
 
 <p>Tasks are defined by <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/tasks.py">tasks.py</a></p>
                 
