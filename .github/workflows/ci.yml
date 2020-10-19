@@ -70,11 +70,11 @@ jobs:
 
       - run: docker images
       - name: Get mkdocs-material version
-        id: mkdocs-material-version
+        id: get-version
         run: |
           export MKDOCS_MATERIAL_VERSION=$(docker run --rm --entrypoint=bash "${PKG_TAG}" -c 'pip show mkdocs-material | grep -E ^Version')
-          echo "${MKDOCS_MATERIAL_VERSION}" >> ${GITHUB_ENV}
-      - run: echo "mkdocs-material ${MKDOCS_MATERIAL_VERSION}"
+          echo "::set-output name=version::${MKDOCS_MATERIAL_VERSION}"
+      - run: echo "${{ steps.get-version.outputs.version }}"
 
       - name: mkdocs build
         run: docker-compose run --rm mkdocs build --config-file ./mkdocs-sample.yml
