@@ -9,6 +9,8 @@ on:
   pull_request:
     paths-ignore:
       - "**.md"
+  release:
+    types: [published]
 
 jobs:
   hadolint:
@@ -44,11 +46,51 @@ jobs:
 
   docker:
     runs-on: ubuntu-18.04
+    needs: hadolint
+    env:
+      DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
+      # DOCKER_HUB_BASE_NAME: peaceiris/mkdocs-material
     steps:
       - uses: actions/checkout@v2
 
-      - name: Docker Build
-        run: docker build -t 'peaceiris/mkdocs-material:latest' .
+      - name: Set env
+        run: |
+          if [ "${{ github.event_name }}" = 'release' ]; then
+            export TAG_NAME="${{ github.event.release.tag_name }}"
+          else
+            export TAG_NAME="latest"
+          fi
+          echo "PKG_TAG=${DOCKER_BASE_NAME}:${TAG_NAME}" >> ${GITHUB_ENV}
+          # echo "HUB_TAG=${DOCKER_HUB_BASE_NAME}:${TAG_NAME}" >> ${GITHUB_ENV}
+
+      - name: Build
+        run: |
+          docker build . -t "${PKG_TAG}"
+          # docker tag "${PKG_TAG}" "${HUB_TAG}"
+
+      - run: docker images
+      - name: Get mkdocs-material version
+        id: get-version
+        run: |
+          export MKDOCS_MATERIAL_VERSION=$(docker run --rm --entrypoint=bash "${PKG_TAG}" -c 'pip show mkdocs-material | grep -E ^Version')
+          echo "::set-output name=version::${MKDOCS_MATERIAL_VERSION}"
+      - run: echo "${{ steps.get-version.outputs.version }}"
 
       - name: mkdocs build
         run: docker-compose run --rm mkdocs build --config-file ./mkdocs-sample.yml
+
+      - name: Login to Registries
+        env:
+          GH_PAT: ${{ secrets.GH_PAT }}
+          # DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+        run: |
+          echo "${GH_PAT}" | docker login ghcr.io -u peaceiris --password-stdin
+          # echo "${DOCKER_HUB_TOKEN}" | docker login -u peaceiris --password-stdin
+
+      - name: Push to GitHub Packages
+        if: github.event_name != 'pull_request'
+        run: docker push "${PKG_TAG}"
+
+      # - name: Push to Docker Hub
+      #   if: github.event_name != 'pull_request'
+      #   run: docker push "${HUB_TAG}"
