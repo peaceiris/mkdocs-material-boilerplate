@@ -12,10 +12,11 @@ on:
 
 jobs:
   hadolint:
-    runs-on: macos-latest
+    runs-on: ubuntu-18.04
+    container:
+      image: 'hadolint/hadolint:v1.18.1-alpine'
     steps:
       - uses: actions/checkout@v2
-      - run: brew install hadolint
       - run: hadolint ./Dockerfile
 
   pipenv:
