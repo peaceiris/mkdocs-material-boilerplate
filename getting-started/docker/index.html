@@ -566,32 +566,14 @@
                 <h1 id="start_with_docker">Start with Docker<a class="headerlink" href="#start_with_docker" title="Permanent link">&para;</a></h1>
 <h2 id="public_docker_image">Public docker image<a class="headerlink" href="#public_docker_image" title="Permanent link">&para;</a></h2>
 <ul>
+<li><a href="https://github.com/users/peaceiris/packages/container/package/mkdocs-material">Package mkdocs-material - GitHub</a></li>
 <li><a href="https://hub.docker.com/r/peaceiris/mkdocs-material">peaceiris/mkdocs-material - Docker Hub</a></li>
 </ul>
 <!-- https://dockeri.co/ -->
 <p><a href="https://hub.docker.com/r/peaceiris/mkdocs-material"><img alt="DockerHub Badge" src="https://dockeri.co/image/peaceiris/mkdocs-material" /></a></p>
 <h2 id="docker-compose">docker-compose<a class="headerlink" href="#docker-compose" title="Permanent link">&para;</a></h2>
-<p>Here is an example <code>docker-compose.yml</code>
+<p>Here is an example <a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/docker-compose.yml">docker-compose.yml</a>
 Please check the latest tag before you go.</p>
-<div class="codehilite"><pre><span></span><code><span class="nt">version</span><span class="p">:</span> <span class="s">&#39;3&#39;</span>
-
-<span class="nt">services</span><span class="p">:</span>
-  <span class="nt">mkdocs</span><span class="p">:</span>
-    <span class="nt">image</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">peaceiris/mkdocs-material:v3.1.6</span>
-    <span class="nt">container_name</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">mkdocs_material_boilerplate</span>
-    <span class="nt">ports</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">8000:8000</span>
-    <span class="nt">volumes</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">${PWD}:/root</span>
-    <span class="nt">stdin_open</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">tty</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">command</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;serve&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;--dev-addr=0.0.0.0:8000&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;--config-file&quot;</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;./mkdocs-sample.yml&quot;</span>
-</code></pre></div>
-
 <div class="codehilite"><pre><span></span><code>docker-compose up
 </code></pre></div>
 
