@@ -7,7 +7,6 @@
 - Host source code on GitHub.
 - Build and deploy with:
     - `mkdocs gh-deploy`
-    - CircleCI
     - GitHub Actions
 
 

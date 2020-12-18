@@ -1,6 +1,6 @@
 # Project information
 site_name: 'MkDocs Material Boilerplate'
-site_description: 'MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with GitHub Actions, CircleCI, Docker, pipenv, and CI/CD'
+site_description: 'MkDocs Material Boilerplate (Starter Kit) - Deploy documentation to hosting platforms (Netlify, GitHub Pages, GitLab Pages, and AWS Amplify Console) with Docker, pipenv, and GitHub Actions.'
 site_author: 'peaceiris'
 site_url: 'https://mkdocs.peaceiris.com/'
 
