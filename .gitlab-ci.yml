@@ -1,14 +1,13 @@
-image: python:3.8-buster
-
-before_script:
-  - pip install --upgrade pip && pip install -r requirements.txt
+image:
+  name: ghcr.io/peaceiris/mkdocs-material:latest
 
 pages:
   script:
-    - mkdocs build
+    - mkdocs build --config-file ./mkdocs-sample.yml
     - mv site public
   artifacts:
     paths:
     - public
   only:
   - master
+  
