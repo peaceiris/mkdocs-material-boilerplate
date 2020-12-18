@@ -13,5 +13,4 @@ RUN python3 -m pip install --upgrade pip && \
 EXPOSE 8000
 
 # Start development server by default
-ENTRYPOINT ["mkdocs"]
-CMD ["serve", "--dev-addr=0.0.0.0:8000"]
+CMD ["mkdocs", "serve", "--dev-addr=0.0.0.0:8000"]
