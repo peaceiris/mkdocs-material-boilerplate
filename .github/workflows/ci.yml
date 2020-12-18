@@ -77,7 +77,7 @@ jobs:
       - run: echo "${{ steps.get-version.outputs.version }}"
 
       - name: mkdocs build
-        run: docker-compose run --rm mkdocs build --config-file ./mkdocs-sample.yml
+        run: docker-compose run --rm mkdocs mkdocs build --config-file ./mkdocs-sample.yml
 
       - name: Login to Registries
         env:
