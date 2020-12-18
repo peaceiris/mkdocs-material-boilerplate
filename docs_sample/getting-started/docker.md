@@ -14,13 +14,14 @@
 ## docker-compose
 
 Here is an example `docker-compose.yml`
+Please check the latest tag before you go.
 
 ```yaml
 version: '3'
 
 services:
   mkdocs:
-    image: peaceiris/mkdocs-material:v2.2.2
+    image: peaceiris/mkdocs-material:v3.1.6
     container_name: mkdocs_material_boilerplate
     ports:
       - 8000:8000
