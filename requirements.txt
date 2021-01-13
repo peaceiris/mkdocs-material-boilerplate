@@ -12,7 +12,7 @@ mkdocs-material==6.2.4
 mkdocs==1.1.2
 nltk==3.5
 prompt-toolkit==3.0.10
-pygments==2.7.3
+pygments==2.7.4
 pymdown-extensions==8.1
 python-markdown-math==0.8
 pyyaml==5.3.1
