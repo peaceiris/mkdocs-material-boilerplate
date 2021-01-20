@@ -15,7 +15,7 @@ prompt-toolkit==3.0.10
 pygments==2.7.4
 pymdown-extensions==8.1
 python-markdown-math==0.8
-pyyaml==5.3.1
+pyyaml==5.4
 regex==2020.11.13
 six==1.15.0
 tornado==6.1
