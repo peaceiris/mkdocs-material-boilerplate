@@ -8,12 +8,12 @@ lunr[languages]==0.5.8
 markdown==3.3.3
 markupsafe==2.0.0a1
 mkdocs-material-extensions==1.0.1
-mkdocs-material==6.2.5
+mkdocs-material==6.2.6
 mkdocs==1.1.2
 nltk==3.5
 prompt-toolkit==3.0.14
 pygments==2.7.4
-pymdown-extensions==8.1
+pymdown-extensions==8.1.1
 python-markdown-math==0.8
 pyyaml==5.4.1
 regex==2020.11.13
