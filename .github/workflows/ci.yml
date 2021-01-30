@@ -16,7 +16,7 @@ jobs:
   hadolint:
     runs-on: ubuntu-18.04
     container:
-      image: 'hadolint/hadolint:v1.19.0-alpine'
+      image: 'hadolint/hadolint:v1.20.0-alpine'
     steps:
       - uses: actions/checkout@v2
       - run: hadolint ./Dockerfile
