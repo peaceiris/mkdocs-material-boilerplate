@@ -5,8 +5,8 @@ LABEL maintainer="peaceiris"
 # Install requirements
 COPY ./requirements.txt /root
 WORKDIR /root
-RUN python3 -m pip install --upgrade pip && \
-    python3 -m pip install -r ./requirements.txt && \
+RUN python3 -m pip install --no-cache-dir --upgrade pip && \
+    python3 -m pip install --no-cache-dir -r ./requirements.txt && \
     python3 -m pip check
 
 # Expose MkDocs development server port
