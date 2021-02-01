@@ -1,7 +1,7 @@
 -i https://pypi.org/simple/
 click==8.0.0a1
 future==0.18.2
-jinja2==2.11.2
+jinja2==2.11.3
 joblib==1.0.0
 livereload==2.6.3
 lunr[languages]==0.5.8
