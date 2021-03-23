@@ -8,7 +8,7 @@ mkdocs = "==1.1.2"
 mkdocs-material = "==7.0.6"
 python-markdown-math = "==0.8"
 Pygments = "==2.8.1"
-prompt_toolkit = "==3.0.17"
+prompt_toolkit = "==3.0.18"
 pyyaml = "==5.4.1"
 Jinja2 = "==2.11.3"
 
