@@ -80,11 +80,10 @@ jobs:
         run: docker-compose run --rm mkdocs mkdocs build --config-file ./mkdocs-sample.yml
 
       - name: Login to Registries
-        env:
-          GH_PAT: ${{ secrets.GH_PAT }}
-          # DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
+        # env:
+        #   DOCKER_HUB_TOKEN: ${{ secrets.DOCKER_HUB_TOKEN }}
         run: |
-          echo "${GH_PAT}" | docker login ghcr.io -u peaceiris --password-stdin
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u peaceiris --password-stdin
           # echo "${DOCKER_HUB_TOKEN}" | docker login -u peaceiris --password-stdin
 
       - name: Push to GitHub Packages
