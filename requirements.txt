@@ -8,7 +8,7 @@ lunr[languages]==0.5.8
 markdown==3.3.4
 markupsafe==2.0.0rc1
 mkdocs-material-extensions==1.0.1
-mkdocs-material==7.0.6
+mkdocs-material==7.0.7
 mkdocs==1.1.2
 nltk==3.5
 prompt-toolkit==3.0.18
