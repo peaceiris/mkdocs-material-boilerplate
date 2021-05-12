@@ -18,13 +18,13 @@ jobs:
     container:
       image: 'ghcr.io/hadolint/hadolint:v2.2.0-alpine'
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
       - run: hadolint ./Dockerfile
 
   pipenv:
     runs-on: ubuntu-18.04
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
@@ -51,7 +51,7 @@ jobs:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
       # DOCKER_HUB_BASE_NAME: peaceiris/mkdocs-material
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v2.3.4
 
       - name: Set env
         run: |
