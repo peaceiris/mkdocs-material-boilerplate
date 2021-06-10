@@ -8,7 +8,7 @@ markupsafe==2.0.1
 mergedeep==1.3.4
 mkdocs-material-extensions==1.0.1
 mkdocs-material==7.1.7
-mkdocs==1.2
+mkdocs==1.2.1
 packaging==20.9
 prompt-toolkit==3.0.18
 pygments==2.9.0
