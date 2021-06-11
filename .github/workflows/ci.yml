@@ -45,6 +45,16 @@ jobs:
       - run: pipenv sync --dev
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
+  netlify:
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
+    env:
+      NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+      NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+    steps:
+      - uses: actions/checkout@v2.3.4
+      - run: npx netlify-cli build
+
   docker:
     if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
     runs-on: ubuntu-20.04
