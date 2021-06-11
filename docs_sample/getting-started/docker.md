@@ -14,7 +14,7 @@
 
 ## docker-compose
 
-Here is an example [docker-compose.yml](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/docker-compose.yml)
+Here is an example [docker-compose.yml](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/docker-compose.yml)
 Please check the latest tag before you go.
 
 ```sh

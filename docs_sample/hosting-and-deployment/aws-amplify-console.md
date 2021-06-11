@@ -15,4 +15,4 @@ Use the following build specification YML file.
 <!-- Internal References -->
 <!-- External References -->
 [AWS Amplify Console]: https://aws.amazon.com/amplify/console/
-[mkdocs-material-boilerplate/amplify.yml]: https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/amplify.yml
+[mkdocs-material-boilerplate/amplify.yml]: https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/amplify.yml

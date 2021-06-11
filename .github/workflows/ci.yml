@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - "**.md"
   pull_request:
@@ -17,7 +17,7 @@ jobs:
     if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
     runs-on: ubuntu-20.04
     container:
-      image: 'ghcr.io/hadolint/hadolint:v2.2.0-alpine'
+      image: "ghcr.io/hadolint/hadolint:v2.2.0-alpine"
     steps:
       - uses: actions/checkout@v2.3.4
       - run: hadolint ./Dockerfile
@@ -31,7 +31,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Cache dependencies
         uses: actions/cache@v2.1.6
@@ -54,7 +54,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Upgrade pip
         run: python3 -m pip install --upgrade pip
@@ -110,7 +110,6 @@ jobs:
           export MKDOCS_MATERIAL_VERSION=$(docker run --rm --entrypoint=bash "${PKG_TAG}" -c 'pip show mkdocs-material | grep -E ^Version')
           echo "::set-output name=version::${MKDOCS_MATERIAL_VERSION}"
       - run: echo "${{ steps.get-version.outputs.version }}"
-
       - name: mkdocs build
         run: docker-compose run --rm mkdocs mkdocs build --config-file ./mkdocs-sample.yml
 
