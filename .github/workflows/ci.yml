@@ -14,7 +14,8 @@ on:
 
 jobs:
   hadolint:
-    runs-on: ubuntu-18.04
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     container:
       image: 'ghcr.io/hadolint/hadolint:v2.2.0-alpine'
     steps:
@@ -22,7 +23,8 @@ jobs:
       - run: hadolint ./Dockerfile
 
   pipenv:
-    runs-on: ubuntu-18.04
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.3.4
 
@@ -39,14 +41,13 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pipenv-
 
-      - run: python3 -m pip install --upgrade pip
-      - run: python3 -m pip install pipenv
+      - run: python3 -m pip install --upgrade pip pipenv
       - run: pipenv sync --dev
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   docker:
-    runs-on: ubuntu-18.04
-    needs: hadolint
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
       # DOCKER_HUB_BASE_NAME: peaceiris/mkdocs-material
