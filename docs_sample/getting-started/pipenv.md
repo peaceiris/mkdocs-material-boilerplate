@@ -35,7 +35,7 @@ pipenv run mkdocs serve
 
 ## `pipenv run`
 
-pipenv task are also defined by [Pipfile](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/Pipfile)
+pipenv task are also defined by [Pipfile](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/Pipfile)
 
 ```sh
 pipenv run version    # mkdocs --version

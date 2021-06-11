@@ -7,6 +7,6 @@ pages:
     - mv site public
   artifacts:
     paths:
-    - public
+      - public
   only:
-  - master
+    - main

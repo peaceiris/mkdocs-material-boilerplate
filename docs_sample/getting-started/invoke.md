@@ -52,4 +52,4 @@ Options:
   -d STRING, --dev-addr=STRING      IP address and port to serve documentation locally (default: localhost:8000)
 ```
 
-Tasks are defined by [tasks.py](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/master/tasks.py)
+Tasks are defined by [tasks.py](https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/tasks.py)

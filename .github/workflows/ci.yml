@@ -3,7 +3,7 @@ name: CI
 on:
   push:
     branches:
-      - master
+      - main
     paths-ignore:
       - "**.md"
   pull_request:
@@ -14,22 +14,24 @@ on:
 
 jobs:
   hadolint:
-    runs-on: ubuntu-18.04
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     container:
-      image: 'ghcr.io/hadolint/hadolint:v2.2.0-alpine'
+      image: "ghcr.io/hadolint/hadolint:v2.2.0-alpine"
     steps:
       - uses: actions/checkout@v2.3.4
       - run: hadolint ./Dockerfile
 
   pipenv:
-    runs-on: ubuntu-18.04
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.3.4
 
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
         with:
-          python-version: '3.8'
+          python-version: "3.8"
 
       - name: Cache dependencies
         uses: actions/cache@v2.1.6
@@ -39,14 +41,47 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pipenv-
 
-      - run: python3 -m pip install --upgrade pip
-      - run: python3 -m pip install pipenv
+      - run: python3 -m pip install --upgrade pip pipenv
       - run: pipenv sync --dev
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
+  netlify:
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - name: Setup Python
+        uses: actions/setup-python@v2.2.2
+        with:
+          python-version: "3.8"
+
+      - name: Upgrade pip
+        run: python3 -m pip install --upgrade pip
+
+      - name: Get pip cache dir
+        id: pip-cache
+        run: echo "::set-output name=dir::$(pip cache dir)"
+
+      - name: Cache dependencies
+        uses: actions/cache@v2.1.6
+        with:
+          path: ${{ steps.pip-cache.outputs.dir }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
+      - name: Install dependencies
+        run: python3 -m pip install -r ./requirements.txt
+
+      - run: npx netlify-cli build
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
   docker:
-    runs-on: ubuntu-18.04
-    needs: hadolint
+    if: github.repository == 'peaceiris/mkdocs-material-boilerplate'
+    runs-on: ubuntu-20.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
       # DOCKER_HUB_BASE_NAME: peaceiris/mkdocs-material
@@ -75,7 +110,6 @@ jobs:
           export MKDOCS_MATERIAL_VERSION=$(docker run --rm --entrypoint=bash "${PKG_TAG}" -c 'pip show mkdocs-material | grep -E ^Version')
           echo "::set-output name=version::${MKDOCS_MATERIAL_VERSION}"
       - run: echo "${{ steps.get-version.outputs.version }}"
-
       - name: mkdocs build
         run: docker-compose run --rm mkdocs mkdocs build --config-file ./mkdocs-sample.yml
 
