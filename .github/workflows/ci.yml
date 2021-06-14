@@ -16,36 +16,40 @@ on:
     types: [published]
 
 jobs:
-  hadolint:
+  prepare:
     if: |
       github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
       ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
       (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
+    outputs:
+      ref: ${{ steps.ref.outputs.ref }}
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Set ref
+        id: ref
+        run: |
+          if [ '${{ github.event_name == 'pull_request_target' }}' = 'true' ]; then
+            echo "::set-output name=ref::${{ github.event.pull_request.head.sha }}"          
+          fi
+
+  hadolint:
+    needs: prepare
     runs-on: ubuntu-20.04
     container:
       image: "ghcr.io/hadolint/hadolint:v2.4.1-alpine"
     steps:
-      - if: ${{ github.event_name != 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
-      - if: ${{ github.event_name == 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ needs.prepare.outputs.ref }}
       - run: hadolint ./Dockerfile
 
   pipenv:
-    if: |
-      github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
-      ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
+    needs: prepare
     runs-on: ubuntu-20.04
     steps:
-      - if: ${{ github.event_name != 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
-      - if: ${{ github.event_name == 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
@@ -65,18 +69,12 @@ jobs:
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   netlify:
-    if: |
-      github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
-      ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
+    needs: prepare
     runs-on: ubuntu-20.04
     steps:
-      - if: ${{ github.event_name != 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
-      - if: ${{ github.event_name == 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v2.2.2
@@ -107,21 +105,15 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
   docker:
-    if: |
-      github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
-      ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
+    needs: prepare
     runs-on: ubuntu-20.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
       # DOCKER_HUB_BASE_NAME: peaceiris/mkdocs-material
     steps:
-      - if: ${{ github.event_name != 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
-      - if: ${{ github.event_name == 'pull_request_target' }}
-        uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.4
         with:
-          ref: ${{ github.event.pull_request.head.sha }}
+          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Set env
         run: |
