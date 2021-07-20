@@ -8,9 +8,3 @@
 [Freepik]: https://www.freepik.com/
 [www.flaticon.com]: https://www.flaticon.com/
 [CC 3.0 BY]: http://creativecommons.org/licenses/by/3.0/
-
-
-
-## Support Author
-
-- [Amazon wish list](http://amzn.asia/ilWK0Yj)

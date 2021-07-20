@@ -5,10 +5,6 @@
 ## Public docker image
 
 - [Package mkdocs-material - GitHub](https://github.com/users/peaceiris/packages/container/package/mkdocs-material)
-- [peaceiris/mkdocs-material - Docker Hub]
-
-<!-- https://dockeri.co/ -->
-[![DockerHub Badge](https://dockeri.co/image/peaceiris/mkdocs-material)][peaceiris/mkdocs-material - Docker Hub]
 
 
 
