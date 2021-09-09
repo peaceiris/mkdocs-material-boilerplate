@@ -17,10 +17,7 @@ on:
 
 jobs:
   prepare:
-    if: |
-      github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
-      ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
+    if: ${{ github.repository == 'peaceiris/mkdocs-material-boilerplate' }}
     outputs:
       ref: ${{ steps.ref.outputs.ref }}
     runs-on: ubuntu-20.04
