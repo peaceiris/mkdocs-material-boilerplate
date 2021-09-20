@@ -4,7 +4,7 @@
 
 ## Public docker image
 
-- [Package mkdocs-material - GitHub](https://github.com/users/peaceiris/packages/container/package/mkdocs-material)
+- [Package peaceiris/mkdocs-material](https://github.com/peaceiris/mkdocs-material-boilerplate/pkgs/container/mkdocs-material)
 
 
 
