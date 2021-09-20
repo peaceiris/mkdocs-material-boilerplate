@@ -147,5 +147,5 @@ jobs:
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u peaceiris --password-stdin
 
       - name: Push to GitHub Packages
-        if: ${{ github.event_name != 'pull_request' }}
+        if: ${{ github.event_name != 'pull_request' && github.event_name != 'pull_request_target' }}
         run: docker push "${PKG_TAG}"
