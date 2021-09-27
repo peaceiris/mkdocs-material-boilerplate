@@ -144,7 +144,7 @@ jobs:
 
       - name: Login to Registries
         run: |
-          echo "${{ secrets.GH_PAT }}" | docker login ghcr.io -u peaceiris --password-stdin
+          echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u peaceiris --password-stdin
 
       - name: Push to GitHub Packages
         if: ${{ github.event_name != 'pull_request' && github.event_name != 'pull_request_target' }}
