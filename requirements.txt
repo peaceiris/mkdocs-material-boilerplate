@@ -17,7 +17,7 @@ mkdocs-material-extensions==1.0.3; python_version >= '3.6'
 mkdocs-material==7.3.4
 mkdocs==1.2.3
 packaging==21.0; python_version >= '3.6'
-prompt-toolkit==3.0.20
+prompt-toolkit==3.0.21
 pygments==2.10.0
 pymdown-extensions==9.0; python_version >= '3.6'
 pyparsing==3.0.0rc2; python_version >= '3.6'
