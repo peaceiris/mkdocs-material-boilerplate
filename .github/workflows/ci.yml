@@ -9,49 +9,22 @@ on:
   pull_request:
     paths-ignore:
       - "**.md"
-  pull_request_target:
-    paths-ignore:
-      - "**.md"
   release:
     types: [published]
 
 jobs:
-  prepare:
-    if: |
-      github.repository == 'peaceiris/mkdocs-material-boilerplate' &&
-      ((github.event_name == 'pull_request_target' && github.actor == 'dependabot[bot]') ||
-      (github.event_name != 'pull_request_target' && github.actor != 'dependabot[bot]'))
-    outputs:
-      ref: ${{ steps.ref.outputs.ref }}
-    runs-on: ubuntu-20.04
-    steps:
-      - name: Set ref
-        id: ref
-        run: |
-          GH_REF=""
-          if [ '${{ github.event_name == 'pull_request_target' }}' = 'true' ]; then
-            GH_REF="${{ github.event.pull_request.head.sha }}"
-          fi
-          echo "::set-output name=ref::${GH_REF}"
-
   hadolint:
-    needs: prepare
     runs-on: ubuntu-20.04
     container:
       image: "ghcr.io/hadolint/hadolint:v2.4.1-alpine"
     steps:
       - uses: actions/checkout@v2.4.0
-        with:
-          ref: ${{ needs.prepare.outputs.ref }}
       - run: hadolint ./Dockerfile
 
   pipenv:
-    needs: prepare
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.4.0
-        with:
-          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v2.3.1
@@ -71,12 +44,9 @@ jobs:
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   netlify:
-    needs: prepare
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v2.4.0
-        with:
-          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Setup Python
         uses: actions/setup-python@v2.3.1
@@ -107,14 +77,11 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
   docker:
-    needs: prepare
     runs-on: ubuntu-20.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
     steps:
       - uses: actions/checkout@v2.4.0
-        with:
-          ref: ${{ needs.prepare.outputs.ref }}
 
       - name: Set env
         run: |
@@ -147,5 +114,5 @@ jobs:
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u peaceiris --password-stdin
 
       - name: Push to GitHub Packages
-        if: ${{ github.event_name != 'pull_request' && github.event_name != 'pull_request_target' }}
+        if: ${{ github.event_name != 'pull_request' }}
         run: docker push "${PKG_TAG}"
