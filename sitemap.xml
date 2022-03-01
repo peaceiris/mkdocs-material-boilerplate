@@ -2,82 +2,82 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mkdocs.peaceiris.com/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/license/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/material-for-mkdocs/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/code-hilite/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/footnote/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/mathjax/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/docker/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/download-boilerplate/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/invoke/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/pip/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/pipenv/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/aws-amplify-console/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/combinations/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/github-pages/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/gitlab-pages/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/netlify/</loc>
-         <lastmod>2022-02-28</lastmod>
+         <lastmod>2022-03-01</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
