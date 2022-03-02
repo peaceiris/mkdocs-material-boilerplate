@@ -18,13 +18,13 @@ jobs:
     container:
       image: "ghcr.io/hadolint/hadolint:v2.4.1-alpine"
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
       - run: hadolint ./Dockerfile
 
   pipenv:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
 
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -46,7 +46,7 @@ jobs:
   netlify:
     runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
 
       - name: Setup Python
         uses: actions/setup-python@v3
@@ -81,7 +81,7 @@ jobs:
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
     steps:
-      - uses: actions/checkout@v2.4.0
+      - uses: actions/checkout@v3
 
       - name: Set env
         run: |
