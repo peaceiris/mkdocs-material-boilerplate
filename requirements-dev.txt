@@ -9,7 +9,7 @@
 # requirements. To emit only development requirements, pass "--dev-only".
 
 -i https://pypi.org/simple/
-click==8.0.1; python_version >= '3.6'
+click==8.1.2; python_version >= '3.6'
 ghp-import==2.0.1
 importlib-metadata==4.5.0; python_version >= '3.6'
 invoke==1.5.0
