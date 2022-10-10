@@ -1,0 +1,37 @@
+name: Dependabot Merger
+
+on:
+  pull_request:
+
+jobs:
+  main:
+    runs-on: ubuntu-22.04
+    if: github.actor == 'dependabot[bot]'
+    timeout-minutes: 1
+    permissions:
+      contents: write
+      pull-requests: write
+    env:
+      PR_URL: ${{ github.event.pull_request.html_url }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: dependabot/fetch-metadata@v1.3.4
+        id: meta
+
+      - name: Approve and Merge
+        if: |
+          (steps.meta.outputs.package-ecosystem == 'github_actions') ||
+          (steps.meta.outputs.package-ecosystem == 'pip')
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          gh pr checkout "${PR_URL}" # sets the upstream metadata for `gh pr status`
+          if [ "$(gh pr status --json reviewDecision -q .currentBranch.reviewDecision)" != "APPROVED" ]; then
+            gh pr review --approve "${PR_URL}"
+          else
+            echo "pull-request already approved"
+          fi
+          gh pr merge --auto --squash "${PR_URL}"
