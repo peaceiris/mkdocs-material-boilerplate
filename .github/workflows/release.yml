@@ -1,0 +1,40 @@
+name: Release
+
+on:
+  workflow_dispatch:
+    inputs:
+      semver_type:
+        description: "Semver type"
+        required: true
+        type: "choice"
+        options:
+          - "patch"
+          - "minor"
+          # - "major"
+        default: "patch"
+
+jobs:
+  main:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - uses: peaceiris/workflows/setup-node@v0.17.1
+        with:
+          node-version: "16"
+      - uses: peaceiris/workflows/setup-git@v0.17.1
+      - name: Create release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          CURRENT_TAG=$(git describe --abbrev=0)
+          NEW_VERSION=$(npm_config_yes=true npx semver "${CURRENT_TAG}" --increment ${{ github.event.inputs.semver_type }})
+          NEW_TAG="v${NEW_VERSION}"
+          RELEASE_TITLE="Release ${NEW_TAG}"
+          git tag -a "${NEW_TAG}" -m "${RELEASE_TITLE}"
+          git push origin "${NEW_TAG}"
+          gh release create "${NEW_TAG}" ${{ github.event.inputs.is_draft }} --title "${RELEASE_TITLE}" --generate-notes
