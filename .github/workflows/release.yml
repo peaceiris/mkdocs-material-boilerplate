@@ -31,7 +31,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          CURRENT_TAG=$(git describe --abbrev=0)
+          CURRENT_TAG=$(git describe --tags --abbrev=0)
           NEW_VERSION=$(npm_config_yes=true npx semver "${CURRENT_TAG}" --increment ${{ github.event.inputs.semver_type }})
           NEW_TAG="v${NEW_VERSION}"
           RELEASE_TITLE="Release ${NEW_TAG}"
