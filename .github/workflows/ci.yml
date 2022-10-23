@@ -14,7 +14,7 @@ on:
 
 jobs:
   hadolint:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     container:
       image: "ghcr.io/hadolint/hadolint:v2.4.1-alpine"
     steps:
@@ -22,17 +22,15 @@ jobs:
       - run: hadolint ./Dockerfile
 
   pipenv:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: "3.10"
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
         with:
           path: ~/.cache/pipenv
           key: ${{ runner.os }}-pipenv-${{ hashFiles('**/Pipfile.lock') }}
@@ -44,26 +42,24 @@ jobs:
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   netlify:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
 
-      - name: Setup Python
-        uses: actions/setup-python@v4
+      - uses: actions/setup-python@v4
         with:
-          python-version: "3.8"
+          python-version: "3.10"
 
       - name: Upgrade pip
         run: python3 -m pip install --upgrade pip
 
       - name: Get pip cache dir
         id: pip-cache
-        run: echo "::set-output name=dir::$(pip cache dir)"
+        run: echo "PIP_CACHE_DIR=$(pip cache dir)" | tee -a "${GITHUB_OUTPUT}"
 
-      - name: Cache dependencies
-        uses: actions/cache@v3
+      - uses: actions/cache@v3
         with:
-          path: ${{ steps.pip-cache.outputs.dir }}
+          path: ${{ steps.pip-cache.outputs.PIP_CACHE_DIR }}
           key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
           restore-keys: |
             ${{ runner.os }}-pip-
@@ -77,7 +73,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
   docker:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
     steps:
@@ -102,9 +98,9 @@ jobs:
         id: get-version
         run: |
           export MKDOCS_MATERIAL_VERSION=$(docker run --rm --entrypoint=bash "${PKG_TAG}" -c 'pip show mkdocs-material | grep -E ^Version')
-          echo "::set-output name=version::${MKDOCS_MATERIAL_VERSION}"
+          echo "MKDOCS_MATERIAL_VERSION=${MKDOCS_MATERIAL_VERSION}" | tee -a "${GITHUB_OUTPUT}"
 
-      - run: echo "${{ steps.get-version.outputs.version }}"
+      - run: echo "${{ steps.get-version.outputs.MKDOCS_MATERIAL_VERSION }}"
 
       - name: mkdocs build
         run: docker-compose run --rm mkdocs mkdocs build --config-file ./mkdocs-sample.yml
