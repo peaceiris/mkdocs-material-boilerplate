@@ -5,7 +5,7 @@
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.8"
+            "python_version": "3.10"
         },
         "sources": [
             {
@@ -285,11 +285,11 @@
     "develop": {
         "invoke": {
             "hashes": [
-                "sha256:a5159fc63dba6ca2a87a1e33d282b99cea69711b03c64a35bb4e1c53c6c4afa0",
-                "sha256:e332e49de40463f2016315f51df42313855772be86435686156bc18f45b5cc6c"
+                "sha256:41b428342d466a82135d5ab37119685a989713742be46e42a3a399d685579314",
+                "sha256:d9694a865764dd3fd91f25f7e9a97fb41666e822bbb00e670091e3f43933574d"
             ],
             "index": "pypi",
-            "version": "==1.7.0"
+            "version": "==1.7.3"
         }
     }
 }
