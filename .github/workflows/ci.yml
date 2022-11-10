@@ -11,6 +11,7 @@ on:
       - "**.md"
   release:
     types: [published]
+  workflow_dispatch:
 
 jobs:
   hadolint:
