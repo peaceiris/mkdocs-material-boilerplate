@@ -6,7 +6,7 @@
   "enabledManagers": [
     "docker-compose",
     "dockerfile",
-    "gitlabci",
+    "gitlabci"
   ],
   "packageRules": [
     {
