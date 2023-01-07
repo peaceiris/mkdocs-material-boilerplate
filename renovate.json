@@ -6,7 +6,10 @@
   "enabledManagers": [
     "docker-compose",
     "dockerfile",
-    "gitlabci"
+    "gitlabci",
+    "github-actions",
+    "pip_requirements",
+    "pipenv"
   ],
   "packageRules": [
     {
