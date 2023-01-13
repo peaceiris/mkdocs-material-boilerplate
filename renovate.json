@@ -3,14 +3,6 @@
   "extends": [
     "local>peaceiris/renovate-config"
   ],
-  "enabledManagers": [
-    "docker-compose",
-    "dockerfile",
-    "gitlabci",
-    "github-actions",
-    "pip_requirements",
-    "pipenv"
-  ],
   "packageRules": [
     {
       "automerge": true,
