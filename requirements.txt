@@ -6,7 +6,7 @@
 #
 
 -i https://pypi.org/simple/
-click==8.1.6; python_version >= '3.7'
+click==8.1.7; python_version >= '3.7'
 ghp-import==2.1.0
 jinja2==3.1.2
 markdown==3.4.4; python_version >= '3.6'
