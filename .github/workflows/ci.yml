@@ -20,7 +20,7 @@ jobs:
   pipenv:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v4
         with:
@@ -40,7 +40,7 @@ jobs:
   netlify:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - uses: actions/setup-python@v4
         with:
@@ -73,7 +73,7 @@ jobs:
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set env
         run: |
