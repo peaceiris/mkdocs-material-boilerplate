@@ -1,5 +1,5 @@
 image:
-  name: ghcr.io/peaceiris/mkdocs-material:v3.5.3
+  name: ghcr.io/peaceiris/mkdocs-material:v4.0.0
 
 pages:
   script:
