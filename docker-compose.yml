@@ -1,6 +1,6 @@
 services:
   mkdocs:
-    image: ghcr.io/peaceiris/mkdocs-material:v4.0.0
+    image: ghcr.io/peaceiris/mkdocs-material:v4.0.1
     container_name: mkdocs_material_boilerplate
     ports:
       - 8000:8000
