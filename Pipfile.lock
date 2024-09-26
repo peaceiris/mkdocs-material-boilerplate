@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "dede16ccb23fb2b104994c016040dafdeb813fc0ab70b6d0bb1d0fe6df324e4e"
+            "sha256": "26fc34e4019e0571e53e15d93a158212ac02e95f56652e39b62dc5b0685be1b4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -269,12 +269,12 @@
         },
         "mkdocs-material": {
             "hashes": [
-                "sha256:2c31607431ec234db124031255b0a9d4f3e1c3ecc2c47ad97ecfff0460471941",
-                "sha256:6e8a986abad77be5edec3dd77cf1ddf2480963fb297a8e971f87a82fd464b070"
+                "sha256:1843c5171ad6b489550aeaf7358e5b7128cc03ddcf0fb4d91d19aa1e691a63b8",
+                "sha256:d4779051d52ba9f1e7e344b34de95449c7c366c212b388e4a2db9a3db043c228"
             ],
             "index": "pypi",
             "markers": "python_version >= '3.8'",
-            "version": "==9.5.37"
+            "version": "==9.5.38"
         },
         "mkdocs-material-extensions": {
             "hashes": [
@@ -335,11 +335,11 @@
         },
         "pymdown-extensions": {
             "hashes": [
-                "sha256:6c74ea6c2e2285186a241417480fc2d3cc52941b3ec2dced4014c84dc78c5493",
-                "sha256:ad277ee4739ced051c3b6328d22ce782358a3bec39bc6ca52815ccbf44f7acdc"
+                "sha256:513a9e9432b197cf0539356c8f1fc376e0d10b70ad150cadeb649a5628aacd45",
+                "sha256:65d82324ef2497931bc858c8320540c6264ab0d9a292707edb61f4fe0cd56633"
             ],
             "markers": "python_version >= '3.8'",
-            "version": "==10.10.1"
+            "version": "==10.10.2"
         },
         "python-dateutil": {
             "hashes": [
