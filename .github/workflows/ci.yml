@@ -15,7 +15,7 @@ on:
 
 jobs:
   hadolint:
-    uses: peaceiris/workflows/.github/workflows/hadolint.yml@v0.21.0
+    uses: peaceiris/workflows/.github/workflows/hadolint.yml@v0.21.1
 
   pipenv:
     runs-on: ubuntu-22.04
