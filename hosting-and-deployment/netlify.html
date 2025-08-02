@@ -12,26 +12,26 @@
         <meta name="author" content="peaceiris">
       
       
-        <link rel="canonical" href="https://mkdocs.peaceiris.com/index.html">
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/hosting-and-deployment/netlify.html">
+      
+      
+        <link rel="prev" href="gitlab-pages.html">
       
       
       
-        <link rel="next" href="license.html">
-      
-      
-      <link rel="icon" href="assets/images/favicon.png">
+      <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.16">
     
     
       
-        <title>MkDocs Material Boilerplate</title>
+        <title>Host on Netlify - MkDocs Material Boilerplate</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.7e37652d.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.7e37652d.min.css">
       
         
-        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
       
       
 
@@ -50,9 +50,9 @@
       
     
     
-      <link rel="stylesheet" href="assets/css/custom.css">
+      <link rel="stylesheet" href="../assets/css/custom.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#details" class="md-skip">
+        <a href="#host_on_netlify" class="md-skip">
           Skip to content
         </a>
       
@@ -92,7 +92,7 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="index.html" title="MkDocs Material Boilerplate" class="md-header__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
+    <a href="../index.html" title="MkDocs Material Boilerplate" class="md-header__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -112,7 +112,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Host on Netlify
             
           </span>
         </div>
@@ -202,7 +202,7 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="index.html" title="MkDocs Material Boilerplate" class="md-nav__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
+    <a href="../index.html" title="MkDocs Material Boilerplate" class="md-nav__button md-logo" aria-label="MkDocs Material Boilerplate" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
@@ -229,30 +229,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Home
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="index.html" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../index.html" class="md-nav__link">
         
   
   
@@ -263,69 +243,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick_start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick start
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Links
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      License
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about_maintainer" class="md-nav__link">
-    <span class="md-ellipsis">
-      About Maintainer
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -337,7 +254,7 @@
   
   
     <li class="md-nav__item">
-      <a href="license.html" class="md-nav__link">
+      <a href="../license.html" class="md-nav__link">
         
   
   
@@ -359,7 +276,7 @@
   
   
     <li class="md-nav__item">
-      <a href="material-for-mkdocs.html" class="md-nav__link">
+      <a href="../material-for-mkdocs.html" class="md-nav__link">
         
   
   
@@ -419,7 +336,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extensions/code-hilite.html" class="md-nav__link">
+      <a href="../extensions/code-hilite.html" class="md-nav__link">
         
   
   
@@ -442,7 +359,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extensions/footnote.html" class="md-nav__link">
+      <a href="../extensions/footnote.html" class="md-nav__link">
         
   
   
@@ -465,7 +382,7 @@
   
   
     <li class="md-nav__item">
-      <a href="extensions/mathjax.html" class="md-nav__link">
+      <a href="../extensions/mathjax.html" class="md-nav__link">
         
   
   
@@ -533,7 +450,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/docker.html" class="md-nav__link">
+      <a href="../getting-started/docker.html" class="md-nav__link">
         
   
   
@@ -556,7 +473,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/download-boilerplate.html" class="md-nav__link">
+      <a href="../getting-started/download-boilerplate.html" class="md-nav__link">
         
   
   
@@ -579,7 +496,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/invoke.html" class="md-nav__link">
+      <a href="../getting-started/invoke.html" class="md-nav__link">
         
   
   
@@ -602,7 +519,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/pip.html" class="md-nav__link">
+      <a href="../getting-started/pip.html" class="md-nav__link">
         
   
   
@@ -625,7 +542,7 @@
   
   
     <li class="md-nav__item">
-      <a href="getting-started/pipenv.html" class="md-nav__link">
+      <a href="../getting-started/pipenv.html" class="md-nav__link">
         
   
   
@@ -652,18 +569,20 @@
       
   
   
+    
   
   
+  
     
     
     
     
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" checked>
         
           
           <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
@@ -679,7 +598,7 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="true">
           <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             Hosting and deployment
@@ -693,7 +612,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hosting-and-deployment/aws-amplify-console.html" class="md-nav__link">
+      <a href="aws-amplify-console.html" class="md-nav__link">
         
   
   
@@ -716,7 +635,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hosting-and-deployment/combinations.html" class="md-nav__link">
+      <a href="combinations.html" class="md-nav__link">
         
   
   
@@ -739,7 +658,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hosting-and-deployment/github-pages.html" class="md-nav__link">
+      <a href="github-pages.html" class="md-nav__link">
         
   
   
@@ -762,7 +681,7 @@
   
   
     <li class="md-nav__item">
-      <a href="hosting-and-deployment/gitlab-pages.html" class="md-nav__link">
+      <a href="gitlab-pages.html" class="md-nav__link">
         
   
   
@@ -782,10 +701,19 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="hosting-and-deployment/netlify.html" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="netlify.html" class="md-nav__link md-nav__link--active">
         
   
   
@@ -796,6 +724,7 @@
   
 
       </a>
+      
     </li>
   
 
@@ -825,59 +754,8 @@
   
   
   
+    
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Details
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#quick_start" class="md-nav__link">
-    <span class="md-ellipsis">
-      Quick start
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#links" class="md-nav__link">
-    <span class="md-ellipsis">
-      Links
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#license" class="md-nav__link">
-    <span class="md-ellipsis">
-      License
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#about_maintainer" class="md-nav__link">
-    <span class="md-ellipsis">
-      About Maintainer
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
   
 </nav>
                   </div>
@@ -896,43 +774,14 @@
   
 
 
-<h1 align="center">
-<img src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/main/docs_sample/images/graduate-cap.png" alt="MkDocs icon" width="170">
-<br>MkDocs Material<br>Boilerplate - Starter Kit
-</h1>
-
-<p><img alt="Eyecatch image of MkDocs Material Boilerplate (Starter Kit)" src="https://raw.githubusercontent.com/peaceiris/mkdocs-material-boilerplate/main/docs_sample/images/material.png" /></p>
-<p><a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/LICENSE"><img alt="license" src="https://img.shields.io/github/license/peaceiris/mkdocs-material-boilerplate.svg" /></a>
-<a href="https://github.com/peaceiris/mkdocs-material-boilerplate/releases/latest"><img alt="release" src="https://img.shields.io/github/release/peaceiris/mkdocs-material-boilerplate.svg" /></a>
-<a href="https://github.com/peaceiris/mkdocs-material-boilerplate/releases"><img alt="GitHub release date" src="https://img.shields.io/github/release-date/peaceiris/mkdocs-material-boilerplate.svg" /></a>
-<a href="https://github.com/peaceiris/mkdocs-material-boilerplate/actions"><img alt="GitHub Actions status" src="https://github.com/peaceiris/mkdocs-material-boilerplate/workflows/github%20pages/badge.svg" /></a></p>
-<p><a href="https://app.netlify.com/sites/mkdocs-material/deploys"><img alt="Netlify Status" src="https://api.netlify.com/api/v1/badges/9c95ccf4-5c1e-447b-8025-dd0b6f8764a5/deploy-status" /></a></p>
-<!-- https://shields.io/ -->
-
-<h2 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h2>
-<p>Read more 👉 <a href="https://peaceiris.github.io/mkdocs-material-boilerplate/">Documentation - MkDocs Material Boilerplate</a></p>
-<h2 id="quick_start">Quick start<a class="headerlink" href="#quick_start" title="Permanent link">&para;</a></h2>
-<div class="codehilite"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/peaceiris/mkdocs-material-boilerplate.git
-<span class="nb">cd</span><span class="w"> </span>mkdocs-material-boilerplate
-pipenv<span class="w"> </span>sync<span class="w"> </span>--dev
-pipenv<span class="w"> </span>shell
-inv<span class="w"> </span>serve<span class="w"> </span>--config-file<span class="w"> </span>mkdocs-sample.yml
-</code></pre></div>
-
-<h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
+<h1 id="host_on_netlify">Host on Netlify<a class="headerlink" href="#host_on_netlify" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://github.com/mkdocs/mkdocs/">mkdocs/mkdocs: Project documentation with Markdown - GitHub</a></li>
-<li><a href="https://github.com/squidfunk/mkdocs-material">squidfunk/mkdocs-material: A Material Design theme for MkDocs</a></li>
+<li><a href="https://mkdocs-material.netlify.com/">Demo site on Netlify</a> (build &amp; deploy with Netlify)</li>
 </ul>
-<h2 id="license">License<a class="headerlink" href="#license" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://github.com/peaceiris/mkdocs-material-boilerplate/blob/main/LICENSE">MIT License</a></li>
-<li><a href="https://www.flaticon.com/free-icon/graduate-cap_62627">The graduate cap icon</a> made by <a href="https://www.freepik.com/">Freepik</a> from <a href="https://www.flaticon.com/">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/">CC 3.0 BY</a></li>
-</ul>
-<h2 id="about_maintainer">About Maintainer<a class="headerlink" href="#about_maintainer" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="https://peaceiris.com/">peaceiris Homepage</a></li>
-</ul>
+<p>Create GitHub repository and deploy to Netlify with the following button in 1 min.</p>
+<p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/peaceiris/mkdocs-material-boilerplate"><img alt="Deploy to Netlify from GitHub" src="https://www.netlify.com/img/deploy/button.svg" /></a></p>
+<!-- Internal References -->
+<!-- External References -->
 
 
 
@@ -1011,10 +860,10 @@ inv<span class="w"> </span>serve<span class="w"> </span>--config-file<span class
     
     
       
-      <script id="__config" type="application/json">{"base": ".", "features": ["tabs"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"base": "..", "features": ["tabs"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="assets/javascripts/bundle.50899def.min.js"></script>
+      <script src="../assets/javascripts/bundle.50899def.min.js"></script>
       
         <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-MML-AM_CHTML"></script>
       
