@@ -1,5 +1,5 @@
 -i https://pypi.org/simple
-invoke==2.2.0; python_version >= '3.6'
+invoke==2.2.1; python_version >= '3.6'
 babel==2.17.0; python_version >= '3.8'
 certifi==2024.12.14; python_version >= '3.6'
 charset-normalizer==3.4.4; python_full_version >= '3.7.0'
