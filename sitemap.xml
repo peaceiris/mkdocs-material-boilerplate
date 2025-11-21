@@ -2,66 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://mkdocs.peaceiris.com/index.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/license.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/material-for-mkdocs.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/code-hilite.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/footnote.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/extensions/mathjax.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/docker.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/download-boilerplate.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/invoke.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/pip.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/getting-started/pipenv.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/aws-amplify-console.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/combinations.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/github-pages.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/gitlab-pages.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
     <url>
          <loc>https://mkdocs.peaceiris.com/hosting-and-deployment/netlify.html</loc>
-         <lastmod>2025-11-20</lastmod>
+         <lastmod>2025-11-21</lastmod>
     </url>
 </urlset>
