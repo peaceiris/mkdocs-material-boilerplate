@@ -12,13 +12,13 @@
         <meta name="author" content="peaceiris">
       
       
-        <link rel="canonical" href="https://mkdocs.peaceiris.com/extensions/code-hilite/">
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/extensions/footnote/">
       
       
-        <link rel="prev" href="../../material-for-mkdocs/">
+        <link rel="prev" href="../code-hilite/">
       
       
-        <link rel="next" href="../footnote/">
+        <link rel="next" href="../mathjax/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>CodeHilite - MkDocs Material Boilerplate</title>
+        <title>Footnote - MkDocs Material Boilerplate</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#codehilite" class="md-skip">
+        <a href="#footnote" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CodeHilite
+              Footnote
             
           </span>
         </div>
@@ -337,6 +337,29 @@
                 
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../code-hilite/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    CodeHilite
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -354,7 +377,7 @@
   
   
   <span class="md-ellipsis">
-    CodeHilite
+    Footnote
     
   </span>
   
@@ -367,7 +390,7 @@
   
   
   <span class="md-ellipsis">
-    CodeHilite
+    Footnote
     
   </span>
   
@@ -398,33 +421,19 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../footnote/" class="md-nav__link">
-        
-  
-  
-  <span class="md-ellipsis">
-    Footnote
-    
-  </span>
-  
-
-      </a>
     </li>
   
 
@@ -815,6 +824,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -834,15 +852,32 @@
   
 
 
-<h1 id="codehilite">CodeHilite<a class="headerlink" href="#codehilite" title="Permanent link">&para;</a></h1>
+<h1 id="footnote">Footnote<a class="headerlink" href="#footnote" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://squidfunk.github.io/mkdocs-material/extensions/codehilite/">CodeHilite - Material for MkDocs</a></li>
-<li><a href="http://pygments.org/languages">Supported languages - Pygments</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/extensions/footnotes/">Footnotes - Material for MkDocs</a></li>
 </ul>
 <h2 id="configure_mkdocsyml">Configure <code>mkdocs.yml</code><a class="headerlink" href="#configure_mkdocsyml" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>markdown_extensions:
-  <span class="k">-</span> codehilite
+  <span class="k">-</span> footnotes
 </code></pre></div>
+
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Footnote example 1.<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup></li>
+<li>Footnote example 2.<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup></li>
+</ul>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p>One line&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>First line
+Second line&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
 
 
 

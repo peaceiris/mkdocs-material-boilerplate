@@ -12,13 +12,13 @@
         <meta name="author" content="peaceiris">
       
       
-        <link rel="canonical" href="https://mkdocs.peaceiris.com/extensions/code-hilite/">
+        <link rel="canonical" href="https://mkdocs.peaceiris.com/extensions/mathjax/">
       
       
-        <link rel="prev" href="../../material-for-mkdocs/">
+        <link rel="prev" href="../footnote/">
       
       
-        <link rel="next" href="../footnote/">
+        <link rel="next" href="../../getting-started/docker/">
       
       
       <link rel="icon" href="../../assets/images/favicon.png">
@@ -26,7 +26,7 @@
     
     
       
-        <title>CodeHilite - MkDocs Material Boilerplate</title>
+        <title>MathJax - MkDocs Material Boilerplate</title>
       
     
     
@@ -78,7 +78,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#codehilite" class="md-skip">
+        <a href="#mathjax" class="md-skip">
           Skip to content
         </a>
       
@@ -114,7 +114,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              CodeHilite
+              MathJax
             
           </span>
         </div>
@@ -337,32 +337,10 @@
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    CodeHilite
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../code-hilite/" class="md-nav__link">
         
   
   
@@ -373,35 +351,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#configure_mkdocsyml" class="md-nav__link">
-    <span class="md-ellipsis">
-      Configure mkdocs.yml
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -434,10 +383,32 @@
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../mathjax/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    MathJax
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -448,6 +419,53 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configure_mkdocsyml" class="md-nav__link">
+    <span class="md-ellipsis">
+      Configure mkdocs.yml
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example_rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example rendering
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -815,6 +833,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#example_code" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example code
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example_rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example rendering
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -834,15 +870,28 @@
   
 
 
-<h1 id="codehilite">CodeHilite<a class="headerlink" href="#codehilite" title="Permanent link">&para;</a></h1>
+<h1 id="mathjax">MathJax<a class="headerlink" href="#mathjax" title="Permanent link">&para;</a></h1>
 <ul>
-<li><a href="https://squidfunk.github.io/mkdocs-material/extensions/codehilite/">CodeHilite - Material for MkDocs</a></li>
-<li><a href="http://pygments.org/languages">Supported languages - Pygments</a></li>
+<li><a href="https://squidfunk.github.io/mkdocs-material/extensions/pymdown/#arithmatex-mathjax">PyMdown - Material for MkDocs</a></li>
 </ul>
 <h2 id="configure_mkdocsyml">Configure <code>mkdocs.yml</code><a class="headerlink" href="#configure_mkdocsyml" title="Permanent link">&para;</a></h2>
 <div class="codehilite"><pre><span></span><code>markdown_extensions:
-  <span class="k">-</span> codehilite
+    <span class="k">-</span> mdx_math:
+        enable_dollar_delimiter: True
 </code></pre></div>
+
+<h2 id="example_code">Example code<a class="headerlink" href="#example_code" title="Permanent link">&para;</a></h2>
+<div class="codehilite"><pre><span></span><code><span class="nv">$$</span>
+P<span class="se">\c</span>dot<span class="w"> </span><span class="nv">Q</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="se">\|</span>P<span class="se">\|\|</span>Q<span class="se">\|\c</span>os<span class="se">\a</span>lpha
+<span class="nv">$$</span>
+</code></pre></div>
+
+<h2 id="example_rendering">Example rendering<a class="headerlink" href="#example_rendering" title="Permanent link">&para;</a></h2>
+<p>
+<script type="math/tex; mode=display">
+P\cdot Q = \|P\|\|Q\|\cos\alpha
+</script>
+</p>
 
 
 
