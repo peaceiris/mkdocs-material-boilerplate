@@ -18,7 +18,7 @@ jobs:
     uses: peaceiris/workflows/.github/workflows/hadolint.yml@v0.21.3
 
   pipenv:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -38,7 +38,7 @@ jobs:
       - run: pipenv run mkdocs build --config-file ./mkdocs-sample.yml
 
   netlify:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     steps:
       - uses: actions/checkout@v4
 
@@ -69,7 +69,7 @@ jobs:
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
   docker:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-24.04
     env:
       DOCKER_BASE_NAME: ghcr.io/peaceiris/mkdocs-material
     steps:
